@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style/css/theme_style.css" />
+	</head>
+
+	<body>
+		<!--内页导航-->
+		<div class="mod-header" id="header" style="top: 0;height: 110px;">
+			<div id="home">
+				<div class="container">
+					<a href="" class="logo"><img class="favicon" src="img/logo.png" height="47" width="346" alt="真融宝"></a>
+					<h1 class="hidden">真融宝 - 真收益、稳理财</h1>
+					<ul class="nav">
+						<li><a href="" class="normal-item active nav_home">首页<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_adv">会员指南<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_abo">流程演示<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_abo">商务合作<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_join">加入公司<i class="i-border-top"></i></a></li>
+					</ul>
+					<!--订单统计-->
+					<div class="nav-info">
+						<ul>
+							<li>昨日结算：<span>￥68865700</span></li>
+							<li>昨日新增订单数：<span>68865700</span></li>
+							<li>本月结算：<span>￥68865700</span></li>
+							<li>本月订单总数：<span>185563</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--main-content-->
+		<div id="warp" class="clearfix">
+			<div class="menu">
+				<dl class="cur" style="border-color:#999;">
+					<dt><a href="Main-index.html" style="background-color:#d44831; color:#fff">用户中心首页<i class="only"></i></a></dt>
+					<dd>累计分成：
+						<font color="#ea9d4f">0元</font>
+					</dd>
+					<dd>上月分成：
+						<font color="#ea9d4f">0元</font>
+					</dd>
+					<dd class="last">本月分成：
+						<font color="#ea9d4f">0元</font>
+					</dd>
+				</dl>
+				<dl class="cur" style="border-color:#999;">
+					<dt style="background-color:#f5c32a; "><a>分成排行榜<i class="only"></i></a></dt>
+					<dd><a href="Ranking-week.html">●　上周排行top10</a></dd>
+					<dd class="last"><a href="Ranking-month.html">●　上月排行top10</a></dd>
+				</dl>
+				<dl>
+					<dt><a>商品大厅<i></i></a></dt>
+					<dd><a href="Goods-index.html">●　全部商品</a></dd>
+					<dd><a href="Goods-index-mold-1.html">●　热销商品</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="Main-news.html">百花头条<i class="only"></i></a></dt>
+				</dl>
+				<dl   class="cur">
+					<dt><a>订单与结算<i></i></a></dt>
+					<dd><a href="Goodsorder-index.html"  class="active">●　我推广的订单</a></dd>
+					<dd class="last"><a href="Goodsorder-jsfk.html">●　结算与返款</a></dd>
+				</dl>
+				<dl>
+					<dt><a>邀请与奖励<i></i></a></dt>
+					<dd class="last"><a href="Invite-index.html">●　我的邀请链接</a></dd>
+					<dd class="last"><a href="InvitationFriends.html">●　我邀请的好友</a></dd>
+				</dl>
+				<dl>
+					<dt><a>订单统计<i></i></a></dt>
+					<dd><a href="Channel-goodsorder.html">●　商品推广统计</a></dd>
+					<dd><a href="Channel-browse.html">●　	点击量统计</a></dd>
+				</dl>
+				<dl>
+					<dt><a>资料设置<i></i></a></dt>
+					<dd><a href="Main-set.html">●　基本信息</a></dd>
+					<dd class="last"><a href="Main-setpwd.html">●　修改密码</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="Point-index.html">积分兑奖<i class="only"></i></a></dt>
+				</dl>
+				<dl>
+					<dt><a href="Remind-index.html">订单提醒<i class="only"></i></a></dt>
+				</dl>
+				<dl>
+					<dt><a href="Main-outlogin.html">退出登录<i class="only"></i></a></dt>
+				</dl>
+			</div>
+			<div id="main" class="clearfix">
+	<div class="filter">
+		<form id="search" action="/Goodsorder-index.html" method="post">
+			<select name="status" style="height:25px;width:85px">
+				<option value="">
+					订单状态
+				</option>
+				<option value="0">
+					已下单
+				</option>
+				<option value="1">
+					确认中
+				</option>
+				<option value="2">
+					已确认
+				</option>
+				<option value="3">
+					待发货
+				</option>
+				<option value="4">
+					已发货
+				</option>
+				<option value="5">
+					已签收
+				</option>
+				<option value="6">
+					拒收
+				</option>
+				<option value="12">
+					待分成
+				</option>
+				<option value="7">
+					已结算
+				</option>
+				<option value="8">
+					无效
+				</option>
+				<option value="9">
+					退货中
+				</option>
+				<option value="10">
+					退货已收到
+				</option>
+				<option value="11">
+					异常
+				</option>
+			</select>
+			&nbsp;
+			<select name="time_type" style="height:25px;width:80px">
+				<option value="creattime">
+					下单时间
+				</option>
+				<option value="fh_time">
+					发货时间
+				</option>
+				<option value="qs_time">
+					签收时间
+				</option>
+			</select>
+			&nbsp;
+			<input ph="开始" type="text" id="time1" name="begin_time" value="" size="11"
+			onclick="ShowCalendar(this, ' 00:00')" class="ph" style="width:60px;">
+			&nbsp;-&nbsp;
+			<input ph="结束" type="text" id="time2" name="end_time" value="" size="11"
+			onclick="ShowCalendar(this, ' 00:00')" class="ph" style="width:60px;">
+			&nbsp;
+			<select name="channel_id" style="height:25px;width:80px">
+				<option value="" selected="">
+					推广渠道
+				</option>
+				<option value="5615">
+					采访稿
+				</option>
+			</select>
+			&nbsp;
+			<select name="pay_type" style="height:25px;width:80px">
+				<option value="" selected="">
+					支付方式
+				</option>
+				<option value="1">
+					货到付款
+				</option>
+				<option value="2">
+					微支付
+				</option>
+			</select>
+			&nbsp;
+			<select name="pay_status" style="height:25px;width:80px">
+				<option value="" selected="">
+					付款状态
+				</option>
+				<option value="1">
+					未付款
+				</option>
+				<option value="2">
+					已付款
+				</option>
+				<option value="3">
+					已取消
+				</option>
+			</select>
+			&nbsp;
+			<input ph="订单编号" type="text" name="orderid" value="" size="11" class="ph"
+			style="width:60px;">
+			&nbsp;
+			<input ph="快递单号" type="text" name="express_id" value="" size="11" class="ph"
+			style="width:60px;">
+			&nbsp;
+			<button type="submit" style="height:25px;">
+				查 询
+			</button>
+		</form>
+	</div>
+	<div class="uc">
+	<div class="notice">1.<span class="tooltip">客户信息未完整显示<span style="display: none;">主要为了方便商户提供统一客户服务，另外也是保护客户隐私。如需要全部客户信息可自行收集订单信息后到系统录单。</span></span>
+	<span class="tooltip">什么是确认中订单<span style="display: none;">主要是那些收货信息不完整的订单，包括但不限于：手机归属与地址不一致、电话无人接听、地址信息不详、订购数量异常 等情况的订单。 <em>手机归属与地址不一致</em>、<em>地址信息不详细</em>、<em>订购数量异常</em> 等</span></span>
+	<span class="tooltip">哪些订单会取消<span style="display: none;">测试/错误/恶意订单，以及顾客电话始终无人接听的订单</span></span>
+	<span class="tooltip">什么是已确认订单<span style="display: none;">是指商户已经与顾客电话核实，并确认无误的订单，这类订单商户通知库房后，库房配货时会修改为待发货订单。</span></span>
+	<span class="tooltip">什么是待发货订单<span style="display: none;">是指商户库房已经完成配货，即将要发货的订单。</span></span>
+	<span class="tooltip">什么是待分成订单<span style="display: none;">本平台具有多笔订单批量结算分成的功能，如财务发现，当前您有多笔可以结算分成的订单，财务会将多笔订单的分成加在一起，再进行批量结算，待分成就是那些处于财务批量给您结算分成前的订单状态。</span></span>
+	<br>2.<span class="tooltip">什么时候发货<span style="display: none;">为保障推广者的利益，所有商户的商品每天都必须发货，只要是当天16点半以前，已经与顾客确认过的订单，一般当天都会发货。</span></span>
+	<span class="tooltip">为什么“已发货”订单，却查不到物流记录<span style="display: none;">商户在配货打包并贴单后就会更新发货信息，但快递公司的系统录入信息一般是在晚上，所以一般隔天查看前一天发货的订单快递号，才会显示物流信息记录。</span></span>
+	<span class="tooltip">已经签收了为什么没更新<span>系统是根据一定算法自动查询物流信息的，由于订单较多，长时间状态未更新的订单会延长自动查询间隔时间，所以稍晚点系统都会自动更新的。另外平台的在线客服，也会每日手动去查询那些长时间不更新物流状态的订单，以便尽快为您结算分成。</span></span>
+	<span class="tooltip">为什么一直显示派送中<span style="display: none;">派送扫描意味着快递员正往客户那边送件，派送后没有物流更新记录，是因为顾客没有签收（顾客没有签收的原因，一般是不接电话、未找到人等），货会暂存在快递公司处。本平台客服会每日人工筛查哪些一直处于派件中的异常订单，发现异常订单后，就会立即督促商户去联系派件公司，尽快给顾客派送的。</span></span>
+	<br>3.确认中、无效、异常、退货等各种类型的订单，商户都会备注详细的原因(点击订单详情即可查看)<br>
+	<span style="color:red;">4.为了防止会员账户和客户信息泄漏，系统定期自动屏蔽删除三个月之前历史订单，打造一个健康绿色平台。</span><br>
+	<span style="color:#f6c128;">5.异常订单:订单出现异常,暂时保留到异常订单状态中,等待进一步的处理。</span><br>
+	</div>
+	<p>
+		</p>
+		<table class=" ui celled table items" width="100%" cellpadding="5" border="0" bgcolor="#d3d3d3" cellspacing="1">
+			<tbody>
+				<tr bgcolor="#f5f5f5">
+					<th style=" text-align:center">
+						订单编号
+					</th>
+					<th style=" text-align:center">
+						下单时间
+					</th>
+					<th style=" text-align:center">
+						客户(电话)
+					</th>
+					<th width="100px;" style=" text-align:center">
+						订购商品
+					</th>
+					<th style=" text-align:center">
+						金额/分成
+					</th>
+					<th style=" text-align:center">
+						状态
+					</th>
+					<th style=" text-align:center">
+						备注
+					</th>
+					<th style=" text-align:center">
+						详情
+					</th>
+				</tr>
+				<tr bgcolor="#ffffff">
+					<td>
+						579298
+					</td>
+					<td>
+						06-27 19:11
+					</td>
+					<td>
+						李明伟
+						18213316178
+					</td>
+					<td>
+						<font style="font-weight:bold">
+							桶装英国VK
+						</font>
+						<br>
+					</td>
+					<td>
+						198/
+						<font style="color:#ff0000">
+							125
+						</font>
+					</td>
+					<td>
+						<b style="color:red;">
+							无效
+						</b>
+					</td>
+					<td>
+						<input type="text" id="content" style="width:80px;" value="">
+						&nbsp;
+						<a href="javascript:void(0);" id="ctj" oid="579298">
+							提交
+						</a>
+					</td>
+					<td>
+						<a href="/Goodsorder-goodsinfo-id-579298.html" target="_blank">
+							详情
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="uc-pager">
+			1 条记录 1/1 页
+		</div>
+	</div>
+</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.menu dl').has('dd').not('.cur').find('dt').click(function() {
+				$(this).blur();
+				o = $(this).parent();
+				o.toggleClass('expand');
+			});
+			$('.tooltip').hover(function() {
+				$(this).find('span').show();
+			}, function() {
+				$(this).find('span').hide();
+			});
+		});
+	</script>
+
+</html>

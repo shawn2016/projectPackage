@@ -1,0 +1,533 @@
+<article class="markdown">
+    <h1>button</h1>
+    <section class="markdown">
+        <p>
+            这里是 Ant Design 的 React 实现，开发和服务于企业级后台产品。
+        </p>
+    </section>
+    <section class="toc">
+        <ul>
+            <li>
+                <a class="bisheng-toc-h2" href="#特性">
+                    <!-- react-text: 762 -->特性
+                    <!-- /react-text -->
+                </a>
+            </li>
+            <li>
+                <a class="bisheng-toc-h2" href="#支持环境">
+                    <!-- react-text: 765 -->支持环境
+                    <!-- /react-text -->
+                </a>
+            </li>
+            <li>
+                <a class="bisheng-toc-h2" href="#版本">
+                    <!-- react-text: 768 -->版本
+                    <!-- /react-text -->
+                </a>
+            </li>
+            <li>
+                <a class="bisheng-toc-h2" href="#安装">
+                    <!-- react-text: 771 -->安装
+                    <!-- /react-text -->
+                </a>
+            </li>
+            <li>
+                <a class="bisheng-toc-h2" href="#示例">
+                    <!-- react-text: 774 -->示例
+                    <!-- /react-text -->
+                </a>
+            </li>
+            <li>
+                <a class="bisheng-toc-h2" href="#链接">
+                    <!-- react-text: 777 -->链接
+                    <!-- /react-text -->
+                </a>
+            </li>
+            <li>
+                <a class="bisheng-toc-h2" href="#谁在使用">
+                    <!-- react-text: 780 -->谁在使用
+                    <!-- /react-text -->
+                </a>
+            </li>
+            <li>
+                <a class="bisheng-toc-h2" href="#如何贡献">
+                    <!-- react-text: 783 -->如何贡献
+                    <!-- /react-text -->
+                </a>
+            </li>
+            <li>
+                <a class="bisheng-toc-h2" href="#社区互助">
+                    <!-- react-text: 786 -->社区互助
+                    <!-- /react-text -->
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="markdown">
+        <h2 id="特性"><span><!-- react-text: 1151 -->特性<!-- /react-text --></span><a href="#特性" class="anchor">#</a></h2>
+        <ul>
+            <li>
+                <p>
+                    <!-- react-text: 1156 -->提炼自企业级中后台产品的交互语言和视觉风格。
+                    <!-- /react-text -->
+                </p>
+            </li>
+            <li>
+                <p>
+                    <!-- react-text: 1159 -->开箱即用的高质量 React 组件。
+                    <!-- /react-text -->
+                </p>
+            </li>
+            <li>
+                <p>
+                    <!-- react-text: 1162 -->使用 TypeScript 构建，提供完整的类型定义文件。
+                    <!-- /react-text -->
+                </p>
+            </li>
+            <li>
+                <p>
+                    <!-- react-text: 1165 -->基于 npm + webpack + babel 的工作流，支持 ES2015 和 TypeScript。
+                    <!-- /react-text -->
+                </p>
+            </li>
+        </ul>
+        <h2 id="支持环境"><span><!-- react-text: 1168 -->支持环境<!-- /react-text --></span><a href="#支持环境" class="anchor">#</a></h2>
+        <ul>
+            <li>
+                <p>
+                    <!-- react-text: 1173 -->现代浏览器和 IE9 及以上。
+                    <!-- /react-text -->
+                </p>
+            </li>
+            <li>
+                <p>
+                    <!-- react-text: 1176 -->支持服务端渲染。
+                    <!-- /react-text -->
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="http://electron.atom.io/">
+                        <!-- react-text: 1180 -->Electron
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+        </ul>
+        <h2 id="版本"><span><!-- react-text: 1183 -->版本<!-- /react-text --></span><a href="#版本" class="anchor">#</a></h2>
+        <ul>
+            <li>
+                <p>
+                    <!-- react-text: 1188 -->稳定版：
+                    <!-- /react-text -->
+                    <a href="https://www.npmjs.org/package/antd"><img src="https://img.shields.io/npm/v/antd.svg?style=flat-square" alt="npm package"></a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <!-- react-text: 1193 -->开发版：
+                    <!-- /react-text -->
+                    <a href="https://www.npmjs.org/package/antd"><img src="https://cnpmjs.org/badge/v/antd.svg?&amp;tag=beta&amp;subject=npm"></a>
+                </p>
+            </li>
+        </ul>
+        <p>
+            <!-- react-text: 1197 -->你可以订阅：
+            <!-- /react-text -->
+            <a href="https://github.com/ant-design/ant-design/releases.atom">
+                <!-- react-text: 1199 -->https://github.com/ant-design/ant-design/releases.atom
+                <!-- /react-text -->
+            </a>
+            <!-- react-text: 1200 -->来获得稳定版发布的通知。
+            <!-- /react-text -->
+        </p>
+        <h2 id="安装"><span><!-- react-text: 1203 -->安装<!-- /react-text --></span><a href="#安装" class="anchor">#</a></h2>
+        <h3 id="使用-npm-或-yarn-安装"><span><!-- react-text: 1207 -->使用 npm 或 yarn 安装<!-- /react-text --></span><a href="#使用-npm-或-yarn-安装" class="anchor">#</a></h3>
+        <p><strong><!-- react-text: 1211 -->我们推荐使用 npm 或 yarn 的方式进行开发<!-- /react-text --></strong>
+            <!-- react-text: 1212 -->，不仅可在开发环境轻松调试，也可放心地在生产环境打包部署使用，享受整个生态圈和工具链带来的诸多好处。
+            <!-- /react-text -->
+        </p><pre class="language-bash"><code>$ <span class="token function">npm</span> <span class="token function">install</span> antd --save</code></pre><pre class="language-bash"><code>$ yarn add antd</code></pre>
+        <p>
+            <!-- react-text: 1218 -->如果你的网络环境不佳，推荐使用
+            <!-- /react-text -->
+            <a href="https://github.com/cnpm/cnpm">
+                <!-- react-text: 1220 -->cnpm
+                <!-- /react-text -->
+            </a>
+            <!-- react-text: 1221 -->。
+            <!-- /react-text -->
+        </p>
+        <h3 id="浏览器引入"><span><!-- react-text: 1224 -->浏览器引入<!-- /react-text --></span><a href="#浏览器引入" class="anchor">#</a></h3>
+        <p>
+            <!-- react-text: 1227 -->在浏览器中使用
+            <!-- /react-text --><code><!-- react-text: 1229 -->script<!-- /react-text --></code>
+            <!-- react-text: 1230 -->和
+            <!-- /react-text --><code><!-- react-text: 1232 -->link<!-- /react-text --></code>
+            <!-- react-text: 1233 -->标签直接引入文件，并使用全局变量
+            <!-- /react-text --><code><!-- react-text: 1235 -->antd<!-- /react-text --></code>
+            <!-- react-text: 1236 -->。
+            <!-- /react-text -->
+        </p>
+        <p>
+            <!-- react-text: 1238 -->我们在 npm 发布包内的
+            <!-- /react-text --><code><!-- react-text: 1240 -->antd/dist<!-- /react-text --></code>
+            <!-- react-text: 1241 -->目录下提供了
+            <!-- /react-text --><code><!-- react-text: 1243 -->antd.js<!-- /react-text --></code>
+            <!-- react-text: 1244 -->
+            <!-- /react-text --><code><!-- react-text: 1246 -->antd.css<!-- /react-text --></code>
+            <!-- react-text: 1247 -->以及
+            <!-- /react-text --><code><!-- react-text: 1249 -->antd.min.js<!-- /react-text --></code>
+            <!-- react-text: 1250 -->
+            <!-- /react-text --><code><!-- react-text: 1252 -->antd.min.css<!-- /react-text --></code>
+            <!-- react-text: 1253 -->。你也可以通过
+            <!-- /react-text -->
+            <a href="https://cdnjs.com/libraries/antd"><img src="https://img.shields.io/cdnjs/v/antd.svg?style=flat-square" alt="CDNJS"></a>
+            <!-- react-text: 1256 -->
+            或
+            <!-- /react-text -->
+            <a href="https://unpkg.com/antd/dist/">
+                <!-- react-text: 1258 -->UNPKG
+                <!-- /react-text -->
+            </a>
+            <!-- react-text: 1259 -->进行下载。
+            <!-- /react-text -->
+        </p>
+        <blockquote>
+            <p><strong><!-- react-text: 1263 -->强烈不推荐使用已构建文件<!-- /react-text --></strong>
+                <!-- react-text: 1264 -->，这样无法按需加载，而且难以获得底层依赖模块的 bug 快速修复支持。
+                <!-- /react-text -->
+            </p>
+        </blockquote>
+        <h2 id="示例"><span><!-- react-text: 1267 -->示例<!-- /react-text --></span><a href="#示例" class="anchor">#</a></h2><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> DatePicker <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'antd'</span><span class="token punctuation">;</span>
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>DatePicker</span> <span class="token punctuation">/&gt;</span></span><span class="token punctuation">,</span> mountNode<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        <p>
+            <!-- react-text: 1272 -->引入样式：
+            <!-- /react-text -->
+        </p><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token string">'antd/dist/antd.css'</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// or 'antd/dist/antd.less'</span></code></pre>
+        <h3 id="按需加载"><span><!-- react-text: 1277 -->按需加载<!-- /react-text --></span><a href="#按需加载" class="anchor">#</a></h3>
+        <p>
+            <!-- react-text: 1280 -->下面两种方式都可以只加载用到的组件。
+            <!-- /react-text -->
+        </p>
+        <ul>
+            <li>
+                <p>
+                    <!-- react-text: 1284 -->使用
+                    <!-- /react-text -->
+                    <a href="https://github.com/ant-design/babel-plugin-import">
+                        <!-- react-text: 1286 -->babel-plugin-import
+                        <!-- /react-text -->
+                    </a>
+                    <!-- react-text: 1287 -->（推荐）。
+                    <!-- /react-text -->
+                </p><pre class="language-js"><code><span class="token comment" spellcheck="true">// .babelrc or babel-loader option</span>
+<span class="token punctuation">{</span>
+  <span class="token string">"plugins"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">"import"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> libraryName<span class="token punctuation">:</span> <span class="token string">"antd"</span><span class="token punctuation">,</span> style<span class="token punctuation">:</span> <span class="token string">"css"</span> <span class="token punctuation">}</span><span class="token punctuation">]</span> <span class="token comment" spellcheck="true">// `style: true` 会加载 less 文件</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre>
+                <p>
+                    <!-- react-text: 1291 -->然后只需从 antd 引入模块即可，无需单独引入样式。等同于下面手动引入的方式。
+                    <!-- /react-text -->
+                </p><pre class="language-jsx"><code><span class="token comment" spellcheck="true">// babel-plugin-import 会帮助你加载 JS 和 CSS</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> DatePicker <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'antd'</span><span class="token punctuation">;</span></code></pre></li>
+            <li>
+                <p>
+                    <!-- react-text: 1296 -->手动引入
+                    <!-- /react-text -->
+                </p><pre class="language-jsx"><code><span class="token keyword">import</span> DatePicker <span class="token keyword">from</span> <span class="token string">'antd/lib/date-picker'</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 加载 JS</span>
+<span class="token keyword">import</span> <span class="token string">'antd/lib/date-picker/style/css'</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">// 加载 CSS</span>
+<span class="token comment" spellcheck="true">// import 'antd/lib/date-picker/style';         // 加载 LESS</span></code></pre></li>
+        </ul>
+        <h3 id="TypeScript"><span><!-- react-text: 1301 -->TypeScript<!-- /react-text --></span><a href="#TypeScript" class="anchor">#</a></h3><pre class="language-js"><code><span class="token comment" spellcheck="true">// tsconfig.json</span>
+<span class="token punctuation">{</span>
+ <span class="token string">"compilerOptions"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+   <span class="token string">"moduleResolution"</span><span class="token punctuation">:</span> <span class="token string">"node"</span><span class="token punctuation">,</span>
+   <span class="token string">"jsx"</span><span class="token punctuation">:</span> <span class="token string">"preserve"</span><span class="token punctuation">,</span>
+   <span class="token string">"allowSyntheticDefaultImports"</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+        <blockquote>
+            <p>
+                <!-- react-text: 1307 -->注意：
+                <!-- /react-text -->
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        <!-- react-text: 1311 -->设置
+                        <!-- /react-text --><code><!-- react-text: 1313 -->allowSyntheticDefaultImports<!-- /react-text --></code>
+                        <!-- react-text: 1314 -->避免
+                        <!-- /react-text --><code><!-- react-text: 1316 -->error TS1192: Module 'react' has no default export<!-- /react-text --></code>
+                        <!-- react-text: 1317 -->的错误。
+                        <!-- /react-text -->
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <!-- react-text: 1320 -->不要使用 @types/antd, antd 已经自带了 TypeScript 定义。
+                        <!-- /react-text -->
+                    </p>
+                </li>
+            </ul>
+        </blockquote>
+        <h2 id="链接"><span><!-- react-text: 1323 -->链接<!-- /react-text --></span><a href="#链接" class="anchor">#</a></h2>
+        <ul>
+            <li>
+                <p>
+                    <a href="http://ant.design/">
+                        <!-- react-text: 1329 -->首页
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p><a href="/docs/react/introduce-cn">UI 组件库</a></p>
+            </li>
+            <li>
+                <p><a href="/changelog-cn">更新日志</a></p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://github.com/dvajs/dva-cli/">
+                        <!-- react-text: 1339 -->开发脚手架
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="http://ant-tool.github.io/">
+                        <!-- react-text: 1343 -->开发工具文档
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="http://react-component.github.io/">
+                        <!-- react-text: 1347 -->React 底层基础组件
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="http://mobile.ant.design">
+                        <!-- react-text: 1351 -->移动端组件
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://motion.ant.design">
+                        <!-- react-text: 1355 -->动效
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://github.com/ant-design/ant-design/wiki/Ant-Design-%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%E7%AE%80%E7%89%88">
+                        <!-- react-text: 1359 -->设计规范速查手册
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://github.com/ant-design/ant-design/wiki/Development">
+                        <!-- react-text: 1363 -->开发者说明
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://github.com/ant-design/ant-design/wiki/%E8%BD%AE%E5%80%BC%E8%A7%84%E5%88%99%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B">
+                        <!-- react-text: 1367 -->版本发布规则
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://github.com/ant-design/ant-design/issues/129">
+                        <!-- react-text: 1371 -->社区贡献脚手架和范例
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://github.com/ant-design/ant-design/wiki/FAQ">
+                        <!-- react-text: 1375 -->常见问题
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="http://codepen.io/benjycui/pen/KgPZrE?editors=001">
+                        <!-- react-text: 1379 -->CodePen 模板
+                        <!-- /react-text -->
+                    </a>
+                    <!-- react-text: 1380 -->for bug reports
+                    <!-- /react-text -->
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://github.com/websemantics/awesome-ant-design">
+                        <!-- react-text: 1384 -->Awesome Ant Design
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p><a href="/docs/react/customize-theme-cn">定制主题</a></p>
+            </li>
+        </ul>
+        <h2 id="谁在使用"><span><!-- react-text: 1390 -->谁在使用<!-- /react-text --></span><a href="#谁在使用" class="anchor">#</a></h2>
+        <ul>
+            <li>
+                <p>
+                    <a href="http://www.antgroup.com/">
+                        <!-- react-text: 1396 -->蚂蚁金服
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="http://www.alibaba.com/">
+                        <!-- react-text: 1400 -->阿里巴巴
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="http://www.koubei.com/">
+                        <!-- react-text: 1404 -->口碑
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="http://www.meituan.com">
+                        <!-- react-text: 1408 -->美团
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="http://www.xiaojukeji.com/">
+                        <!-- react-text: 1412 -->滴滴
+                        <!-- /react-text -->
+                    </a>
+                </p>
+            </li>
+        </ul>
+        <blockquote>
+            <p>
+                <!-- react-text: 1415 -->如果你的公司和产品使用了 Ant Design，欢迎到
+                <!-- /react-text -->
+                <a href="https://github.com/ant-design/ant-design/issues/477">
+                    <!-- react-text: 1417 -->这里
+                    <!-- /react-text -->
+                </a>
+                <!-- react-text: 1418 -->留言。
+                <!-- /react-text -->
+            </p>
+        </blockquote>
+        <h2 id="如何贡献"><span><!-- react-text: 1421 -->如何贡献<!-- /react-text --></span><a href="#如何贡献" class="anchor">#</a></h2>
+        <p>
+            <!-- react-text: 1424 -->在任何形式的参与前，请先阅读
+            <!-- /react-text -->
+            <a href="https://github.com/ant-design/ant-design/blob/master/.github/CONTRIBUTING.md">
+                <!-- react-text: 1426 -->贡献者文档
+                <!-- /react-text -->
+            </a>
+            <!-- react-text: 1427 -->。如果你希望参与贡献，欢迎
+            <!-- /react-text -->
+            <a href="https://github.com/ant-design/ant-design/pulls">
+                <!-- react-text: 1429 -->Pull Request
+                <!-- /react-text -->
+            </a>
+            <!-- react-text: 1430 -->，或给我们
+            <!-- /react-text -->
+            <a href="https://github.com/ant-design/ant-design/issues/new">
+                <!-- react-text: 1432 -->报告 Bug
+                <!-- /react-text -->
+            </a>
+            <!-- react-text: 1433 -->。
+            <!-- /react-text -->
+        </p>
+        <blockquote>
+            <p>
+                <!-- react-text: 1436 -->强烈推荐阅读
+                <!-- /react-text -->
+                <a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way">
+                    <!-- react-text: 1438 -->《提问的智慧》
+                    <!-- /react-text -->
+                </a>
+                <!-- react-text: 1439 -->、
+                <!-- /react-text -->
+                <a href="https://github.com/seajs/seajs/issues/545">
+                    <!-- react-text: 1441 -->《如何向开源社区提问题》
+                    <!-- /react-text -->
+                </a>
+                <!-- react-text: 1442 -->和
+                <!-- /react-text -->
+                <a href="http://www.chiark.greenend.org.uk/%7Esgtatham/bugs-cn.html">
+                    <!-- react-text: 1444 -->《如何有效地报告 Bug》
+                    <!-- /react-text -->
+                </a>
+                <!-- react-text: 1445 -->，更好的问题更容易获得帮助。
+                <!-- /react-text -->
+            </p>
+        </blockquote>
+        <h2 id="社区互助"><span><!-- react-text: 1448 -->社区互助<!-- /react-text --></span><a href="#社区互助" class="anchor">#</a></h2>
+        <p>
+            <!-- react-text: 1451 -->如果您在使用的过程中碰到问题，可以通过下面几个途径寻求帮助，同时我们也鼓励资深用户通过下面的途径给新人提供帮助。
+            <!-- /react-text -->
+        </p>
+        <p>
+            <!-- react-text: 1453 -->通过 Stack Overflow 或者 Segment Fault 提问时，建议加上
+            <!-- /react-text --><code><!-- react-text: 1455 -->antd<!-- /react-text --></code>
+            <!-- react-text: 1456 -->标签。
+            <!-- /react-text -->
+        </p>
+        <ol>
+            <li>
+                <p>
+                    <a href="http://stackoverflow.com/questions/tagged/antd">
+                        <!-- react-text: 1461 -->Stack Overflow
+                        <!-- /react-text -->
+                    </a>
+                    <!-- react-text: 1462 -->（英文）
+                    <!-- /react-text -->
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://segmentfault.com/t/antd">
+                        <!-- react-text: 1466 -->Segment Fault
+                        <!-- /react-text -->
+                    </a>
+                    <!-- react-text: 1467 -->（中文）
+                    <!-- /react-text -->
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://gitter.im/ant-design/ant-design?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/ant-design/ant-design"></a>
+                </p>
+            </li>
+        </ol>
+    </section>
+</article>

@@ -1,0 +1,46 @@
+.mod-header {
+  height: 78px;
+  background: #fff;
+  border-bottom: 1px solid #ededed;
+}
+.mod-header .logo {
+  float: left;
+  display: block;
+  height: 78px;
+  position: relative;
+}
+.mod-header .logo .favicon {
+  float: left;
+  margin-top: 24px;
+}
+.mod-header .container {
+  height: 100%;
+  background-color: #fff;
+}
+.mod-header .nav {
+  float: right;
+  height: 78px;
+  font-size: 16px;
+}
+.mod-header .nav li {
+  float: left;
+}
+.mod-header .nav li a {
+  padding: 8px 20px;
+  display: block;
+  margin-top: 39px;
+  color: #4b4b4b;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+.mod-header .nav li a:hover {
+  border-radius: 4px;
+  background-color: red;
+  color: #fff;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}

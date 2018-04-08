@@ -1,0 +1,30 @@
+$element-separator:        "__" !default;
+$modifier-separator:       "--" !default;
+
+@mixin b($name) {
+  .#{$name} {
+    @content;
+  }
+}
+@mixin e($name) {
+  @at-root {
+    &#{$element-separator}#{$name} {
+      @content;
+    }
+  }
+}
+@mixin m($name) {
+  @at-root {
+    &#{$modifier-separator}#{$name} {
+      @content;
+    }
+  }
+}
+
+@mixin transform{
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}

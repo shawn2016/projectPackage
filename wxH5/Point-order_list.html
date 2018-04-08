@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style/css/theme_style.css" />
+	</head>
+
+	<body>
+		<!--内页导航-->
+		<div class="mod-header" id="header" style="top: 0;height: 110px;">
+			<div id="home">
+				<div class="container">
+					<a href="" class="logo"><img class="favicon" src="img/logo.png" height="47" width="346" alt="真融宝"></a>
+					<h1 class="hidden">真融宝 - 真收益、稳理财</h1>
+					<ul class="nav">
+						<li><a href="" class="normal-item active nav_home">首页<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_adv">会员指南<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_abo">流程演示<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_abo">商务合作<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_join">加入公司<i class="i-border-top"></i></a></li>
+					</ul>
+					<!--订单统计-->
+					<div class="nav-info">
+						<ul>
+							<li>昨日结算：<span>￥68865700</span></li>
+							<li>昨日新增订单数：<span>68865700</span></li>
+							<li>本月结算：<span>￥68865700</span></li>
+							<li>本月订单总数：<span>185563</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--main-content-->
+		<div id="warp" class="clearfix">
+			<div class="menu">
+				<dl class="cur" style="border-color:#999;">
+					<dt><a href="Main-index.html" style="background-color:#d44831; color:#fff">返回首页</a><i class="only"></i></dt>
+					<dd>累计分成：
+						<font color="#ea9d4f">0元</font>
+					</dd>
+					<dd>上月分成：
+						<font color="#ea9d4f">0元</font>
+					</dd>
+					<dd class="last">本月分成：
+						<font color="#ea9d4f">0元</font>
+					</dd>
+				</dl>
+				<dl class="cur" style="border-color:#999;">
+					<dt style="background-color:#f5c32a; "><a>分成排行榜<i class="only"></i></a></dt>
+					<dd><a href="Ranking-week.html">●　上周排行top10</a></dd>
+					<dd class="last"><a href="Ranking-month.html">●　上月排行top10</a></dd>
+				</dl>
+				<dl class="cur">
+					<dt><a href="Point-order_list.html">兑奖记录<i class="only"></i></a></dt>
+				</dl>
+				<dl class="cur"><dt><a href="Point-index.html">全部分类<i></i></a></dt>
+					<dd><a href="/Point-index-cate_id-36.html">●　话费直充</a></dd>
+					<dd><a href="/Point-index-cate_id-37.html">●　QQ业务</a></dd>
+					<dd><a href="/Point-index-cate_id-38.html">●　游戏点卡</a></dd>
+					<dd><a href="/Point-index-cate_id-35.html">●　数码手机</a></dd>
+					<dd><a href="/Point-index-cate_id-39.html">●　电脑办公</a></dd>
+					<dd><a href="/Point-index-cate_id-40.html">●　大小家电</a></dd>
+					<dd><a href="/Point-index-cate_id-48.html">●　现金奖励</a></dd>
+					<dd><a href="/Point-index-cate_id-43.html">●　数码配件</a></dd>
+					<dd><a href="/Point-index-cate_id-42.html">●　时尚影音</a></dd>
+					<dd><a href="/Point-index-cate_id-41.html">●　摄影摄像</a></dd>
+					<dd><a href="/Point-index-cate_id-44.html">●　母婴专区</a></dd>
+					<dd><a href="/Point-index-cate_id-45.html">●　运动健康</a></dd>
+					<dd><a href="/Point-index-cate_id-46.html">●　礼品箱包</a></dd>
+					<dd><a href="/Point-index-cate_id-47.html">●　汽车用品</a></dd>
+				</dl>
+
+				<div style="display:none;">
+				</div>
+			</div>
+			<div id="main" class="clearfix">
+				<div class="filter">
+					<form id="search" action="/Point-order_list.html" method="post"><select name="status" style="height:25px;width:125px"><option value="">订单状态</option><option value="1">审核中</option><option value="2">审核通过</option><option value="4">已发货</option><option value="6">配送成功</option><option value="5">失败</option></select>&nbsp;
+
+						<input placeholder="订单编号" type="text" name="orderid" value="" style="width:100px;"> &nbsp;
+						<input placeholder="快递单号" type="text" name="kuaidi_num" value="" style="width:100px;"> &nbsp;
+
+						<button type="submit" style="height:25px;">查 询</button><input type="hidden" name="__hash__" value="f85044261c40b8f31966c91dacace3da_f11246a584063009ecdb564cabf482cd"></form>
+				</div>
+				<div class="uc"><br>
+					<ul class="comform" style="margin-top:-50px;">
+						<li><label>		积分余额&nbsp;<input type="text" disabled="" value="0" style="width:130px;">&nbsp;&nbsp;
+		消费积分&nbsp;<input type="text" disabled="" value="0" style="width:130px;">&nbsp;&nbsp;
+		<button type="button" id="jskf" class="big" style="height:40px;font-size:15px;line-height:40px;">积分详情</button><!-- <a href="/Point-order_list.html" target="_blank"></a> --></label></li>
+					</ul>
+					<script type="text/javascript">
+						$(function() {
+							$('#jskf').click(function() {
+								window.location.href = "/Goodsorder-jsfk.html";
+							})
+						})
+					</script><br>
+					<table width="100%" cellpadding="5" border="0" bgcolor="#d3d3d3" cellspacing="1">
+						<tbody>
+							<tr bgcolor="#f5f5f5">
+								<th width="60px" style=" text-align:center">订单编号</th>
+								<th width="100px" style=" text-align:center">商品名称</th>
+								<th width="40px" style=" text-align:center">处理状态</th>
+								<th width="100px" style=" text-align:center">兑换时间</th>
+								<th width="40px" style=" text-align:center">详情</th>
+							</tr>
+						</tbody>
+					</table>
+					<div class="uc-pager"></div>
+					<h5>重要说明</h5>
+					<div class="notice">1、成功提交兑换订单，工作人员会在24小时内，对订单进行审核并且变更相应的订单状态。<br>2、订单状态为 <b style="color:red;">"审核通过"</b>仓储人员会尽快安排发货。 <br>3、订单状态为 <b style="color:red;">"已发货"</b>仓储人员会尽快把奖品配送到提交订单时添加的地址。（可在详情中查看物流信息） <br>4、订单状态为 <b style="color:red;">"配送成功"</b>会增加历史消费积分。 <br>5、订单状态为
+						<b style="color:red;">"失败"</b>会返还兑换时消费积分。 <br>6、如有其他疑问，请联系在线客服进行咨询 <b style="color:red;">"4000727771"</b><br></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.menu dl').has('dd').not('.cur').find('dt').click(function() {
+				$(this).blur();
+				o = $(this).parent();
+				o.toggleClass('expand');
+			});
+			$('.tooltip').hover(function() {
+				$(this).find('span').show();
+			}, function() {
+				$(this).find('span').hide();
+			});
+		});
+	</script>
+	<script type="text/javascript" src="js/ZeroClipboard.js"></script>
+	<script type="text/javascript">
+		// 定义一个新的复制对象
+		var clip = new ZeroClipboard(document.getElementById("yqm"), {
+			moviePath: "http://www.fxb.so/Data/copy/ZeroClipboard.swf?nocache=1468136706544"
+		});
+
+		// 复制内容到剪贴板成功后的操作
+		clip.on('complete',
+			function(client, args) {
+				alert("复制成功，复制内容为：" + args.text);
+			});
+
+		var clip = new ZeroClipboard(document.getElementById("yqurl"), {
+			moviePath: "./Data/copy/ZeroClipboard.swf"
+		});
+
+		//// 复制内容到剪贴板成功后的操作
+		clip.on('complete', function(client, args) {
+			alert("复制成功，复制内容为：" + args.text);
+		});
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			$("#ewm").hover(function() {
+					$('#qrcode').show();
+				},
+				function() {
+					$('#qrcode').hide();
+				})
+		})
+	</script>
+
+</html>

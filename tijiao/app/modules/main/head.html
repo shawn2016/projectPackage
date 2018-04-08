@@ -1,0 +1,167 @@
+<div class="container-fluid visible-lg visible-md">
+    <!-- ng-class="{true: 'fixed', false: ''}[scrollTopHeader]" -->
+    <div class="mos-header fixed">
+        <div class=" base-nav-container clearfix">
+            <div class="logo-container">
+                <!-- <a class="mos-logo" href="/" id="logo"></a> -->
+                <a href="" class="logo logomd">互联网知识产权调解平台<div>Internet intellectual property mediation platform</div></a>
+            </div>
+            <div class="header-list-container">
+                <a href="javascript:void(0)" class="mobile-nav-icon"></a>
+                <ul class="header-list header-left">
+                    <li>
+                        <a ui-sref="homePage.index">首页</a>
+                    </li>
+                    <li>
+                        <a id="doc_url">政策与时事</a>
+                        <div class="sub-nav-container">
+                            <span class="sub-arrow arrow-top"></span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a ui-sref="homePage.policy">有关政策</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a id="doc_url">规则与费用</a>
+                        <div class="sub-nav-container">
+                            <span class="sub-arrow arrow-top"></span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a ui-sref="homePage.flow">调解工作流程</a>
+                                </li>
+                                <li>
+                                    <a ui-sref="homePage.rule">调解规则</a>
+                                </li>
+                                <li>
+                                    <a ui-sref="homePage.free">调解费用</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a id="doc_url">调解员</a>
+                        <div class="sub-nav-container">
+                            <span class="sub-arrow arrow-top"></span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a ui-sref="homePage.personnel">调解团队介绍 </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a id="doc_url" ui-sref="homePage.case">经典案例</a>
+                    </li>
+                    <li>
+                        <a id="doc_url" ui-sref="homePage.about">联系我们</a>
+                    </li>
+                    <li class="login-icon" ng-show="$root.logined">
+                        <a href="">
+                        <img src="http://img3.sycdn.imooc.com/55d995dd000142d801000100-100-100.jpg" alt="">
+                    </a>
+                        <div class="g-user-card">
+                           <div class="g-user-name">
+                               {{$root.UserName}}
+                           </div>
+                           <div class="out" ng-click="out()">
+                               安全退出
+                           </div>
+                        </div>
+                    </li>
+                    <li ng-hide="$root.logined" class="nav-button"><a class="btn btn-default btn-sm login" ui-sref="homePage.login">登录</a></li>
+                    <li ng-hide="$root.logined" class="nav-button"><a class="btn btn-default btn-sm signup" ui-sref="homePage.register"><span>免费注册</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 移动端 -->
+<div class="mos-header-mobile visible-xs visible-sm">
+    <div class="container base-nav-container">
+        <div class="mobile-header-container">
+            <a href="" class="logo logomd">互联网知识产权调解平台<div>Internet intellectual property mediation platform</div></a>
+            <a href="javascript:void(0)" ng-click="menuClick()" class="mobile-nav-icon glyphicon glyphicon-align-justify"></a>
+        </div>
+        <div class="header-list-container" style="z-index:100;" ng-class="{true: 'open', false: ''}[menuOpen]">
+            <ul class="header-list header-nav">
+                <li class="active">
+                    <a href="/">首页</a>
+                </li>
+                <li class="nav-first">
+                    <span class="rec-icon blue"></span>
+                    <a href="javascript:void(0)">
+                            政策与时事
+                            <span class="nav-icon"></span>
+                        </a>
+                    <div class="nav-first-container">
+                        <ul class="sub-nav">
+                            <li>
+                                <a ui-sref="homePage.policy">有关政策</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-first">
+                    <span class="rec-icon blue"></span>
+                    <a href="javascript:void(0)">
+                            规则与费用
+                                <span class="nav-icon"></span>
+                            </a>
+                    <div class="nav-first-container">
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="/about/knowus">调解工作流程</a>
+                            </li>
+                            <li>
+                                <a href="/about/knowus">调解规则</a>
+                            </li>
+                            <li>
+                                <a href="/about/knowus">调解费用</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-first">
+                    <span class="rec-icon blue"></span>
+                    <a href="javascript:void(0)">
+                                    调解员
+                                    <span class="nav-icon"></span>
+                                </a>
+                    <div class="nav-first-container">
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="/about/knowus">调解团队介绍</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="/">经典案例</a>
+                </li>
+                <li class="active">
+                    <a href="/">联系我们</a>
+                </li>
+            </ul>
+            <ul class="header-list header-info" id="mheaderAccountContainer">
+                <li id="nav_login">
+                    <a class="u-login" href="javascript:void(0)">登录</a>
+                </li>
+                <li id="nav_signup" class="account-signin">
+                    <a href="/uf_signup">注册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--getTop start-->
+<div class="m-top-cbbfixed" data-am-widget="gotop">
+    <a class="m-top-weixin m-top-cbbtn">
+            <span class="m-top-weixin-icon"></span>
+            <div></div>
+        </a>
+    <a class="m-top-go m-top-cbbtn"><span class="m-top-goicon"></span></a>
+</div>
+<!--getTop end-->

@@ -1,0 +1,142 @@
+.login-panel{
+    border-radius: 4px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 13px 0 rgba(33,86,178,.28);
+    transition: all .5s cubic-bezier(.4,0,.2,1),z-index 0s .12s;
+    -ms-transition: all .5s cubic-bezier(.4,0,.2,1),z-index 0s .12s;
+}
+.login{
+    margin: 150px auto 200px;
+    .title{
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 40px;
+        .sub-title{
+            font-size: 20px;            
+        }
+    }
+    .login-part{
+        padding: 50px 0;
+        .left{
+            border-right:2px solid #fafafa;
+            padding: 0 40px;
+            h2{
+                font-size: 20px;
+            }
+            .xieyi{
+                &:hover{
+                    color: #3ea8f5;
+                }
+            }
+        }
+        .right{
+            padding: 0 40px;    
+            .passport-goto{
+                margin-bottom: 10px;
+                padding-top: 50px;
+                color: #000;
+                font-size: 16px;
+                a{
+                    color: #35b558;
+                    text-decoration: none;
+                }
+            }   
+            .passport-third{
+                margin-top: 50px;
+                .hd{
+                    height: 16px;
+                    font-size: 12px;
+                    text-align: center;
+                    margin: 0 auto;
+                    .layout-inner{
+                        margin-bottom: 7px;
+                        border-bottom: 2px solid #f2f2f2;
+                    }
+                    h3{
+                        width: 106px;
+                        margin: 0 auto -8px;
+                        background-color: #fff;
+                        font-weight: 400;
+                        line-height: 16px;
+                        font-size: 12px;
+                    }
+                }
+                .links{
+                    width: 286px;
+                    margin: 0 auto;
+                    padding-top: 20px;
+                    a{
+                        float: left;
+                        display: block;
+                        margin: 0 8px;
+                        &:hover .icon-eoe{
+                            background-position: -243px -1px;
+                        }
+                        &:hover .icon-tencent{
+                            background-position: 0 -1px;
+                        }
+                        &:hover .icon-weibo{
+                            background-position: -81px -1px;
+                        }
+                        &:hover .icon-weixin{
+                            background-position: -162px -1px;
+                        }
+                    }
+                    .passport-icon{
+                        background-image: url(http://sp1.jikexueyuan.com/static/images/fouricon.png);
+                        background-size: 298px 120px;
+                    }
+                    .passport-icon{
+                        display: inline-block;
+                        vertical-align: middle;
+                        background-repeat: no-repeat;
+                    }
+                    .icon-eoe, .icon-tencent, .icon-weibo, .icon-weixin{
+                        width: 55px;
+                        height: 55px;
+                        background-position: 0 -65px;
+                    }
+                    .icon-weibo{
+                        background-position: -81px -65px;
+                    }
+                    .icon-weixin{
+                        background-position: -162px -65px;
+                    }
+                    .icon-eoe{
+                        background-position: -243px -65px;
+                    }
+                }
+            }     
+        }
+    }
+    .layout{
+        padding:0 40px;
+            margin-bottom: 30px;
+        .sub-title{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom:10px;
+        }
+        p{
+            margin-bottom: 10px;
+        }
+    }
+}
+.xieyi-title{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+ 
+}
+.xieyi-sub-title{
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+.orgin{
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}

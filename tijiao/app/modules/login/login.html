@@ -1,0 +1,82 @@
+<section class="mt100 container login">
+    <div class="title">
+        知识产权纠纷调解维权平台
+    </div>
+    <div class="col-lg-12">
+        <div class="login-panel">
+            <div class="login-part">
+                <div class="row">
+                    <div class="col-lg-6 left">
+                        <div ng-show="error" class="alert alert-danger">
+                                {{error}}
+                            </div>
+                        <h2>欢迎登录</h2>
+                        <form class="form-horizontal" role="form" id="loginForm" name="loginForm" ng-submit="login()" novalidate>
+                            <div class="form-group" ng-class="{'has-error':loginForm.loginName.$dirty && loginForm.loginName.$invalid}">
+                                <div class="col-sm-12">
+                                    <input type="text" name="loginName" ng-model="loginName" class="form-control" id="firstname" ng-minlength="8" ng-maxlength="32"
+                                        placeholder="手机 / 用户名 / 邮箱" required>
+                                </div>
+                                <div ng-show="loginForm.loginName.$dirty && loginForm.loginName.$invalid">
+                                    <div class="input-error" ng-show="loginForm.loginName.$error.required">
+                                        请输入用户名
+                                    </div>
+                                    <div class="input-error" ng-show="loginForm.loginName.$error.minlength">用户名至少输入8个字符</div>
+                                    <div class="input-error" ng-show="loginForm.loginName.$error.maxlength">用户名最多输入32字符</div>
+                                </div>
+                            </div>
+                            <div class="form-group" ng-class="{'has-error':loginForm.loginPwd.$dirty && loginForm.loginPwd.$invalid}">
+                                <div class="col-sm-12">
+                                    <input type="password" name="loginPwd" ng-model="loginPwd" class="form-control" id="firstname" ng-minlength="6" ng-maxlength="32"
+                                        required placeholder="输入6~32位密码" required>
+                                </div>
+                                <div ng-show="loginForm.loginPwd.$dirty && loginForm.loginPwd.$invalid">
+                                    <div class="input-error" ng-show="loginForm.loginPwd.$error.required">
+                                        请输入密码
+                                    </div>
+                                    <div class="input-error" ng-show="loginForm.loginPwd.$error.minlength">密码至少输入6个字符</div>
+                                    <div class="input-error" ng-show="loginForm.loginPwd.$error.maxlength">密码最多输入32字符</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="checkbox">
+                                        <label>
+                                    <input  type="checkbox"> 请记住我
+                                    </label>
+                                        <label class="pull-right">
+                                           <a href="" ui-sref="homePage.getpwd">忘记密码？</a>
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <button type="submit" ng-disabled="loginForm.$invalid" class="btn btn-primary btn-block">登录</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 right">
+                        <div class="aside">
+                            <div class="passport-goto">没有账号? <a ui-sref="homePage.register" tabindex="5">免费注册</a></div>
+                            <div class="passport-third">
+                                <header class="hd">
+                                    <div class="layout-inner">
+                                        <h3>快速登录</h3>
+                                    </div>
+                                </header>
+                                <div class="links">
+                                    <a href="/connect/qq"><i class="passport-icon icon-tencent"></i></a>
+                                    <a href="/connect/weibo"><i class="passport-icon icon-weibo"></i></a>
+                                    <a href="/connect/weixin"><i class="passport-icon icon-weixin"></i></a>
+                                    <a href="/connect/eoe"><i class="passport-icon icon-eoe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

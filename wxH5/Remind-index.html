@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style/css/theme_style.css" />
+	</head>
+
+	<body>
+		<!--内页导航-->
+		<div class="mod-header" id="header" style="top: 0;height: 110px;">
+			<div id="home">
+				<div class="container">
+					<a href="" class="logo"><img class="favicon" src="img/logo.png" height="47" width="346" alt="真融宝"></a>
+					<h1 class="hidden">真融宝 - 真收益、稳理财</h1>
+					<ul class="nav">
+						<li><a href="" class="normal-item active nav_home">首页<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_adv">会员指南<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_abo">流程演示<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_abo">商务合作<i class="i-border-top"></i></a></li>
+						<li><a href="" class="normal-item nav_join">加入公司<i class="i-border-top"></i></a></li>
+					</ul>
+					<!--订单统计-->
+					<div class="nav-info">
+						<ul>
+							<li>昨日结算：<span>￥68865700</span></li>
+							<li>昨日新增订单数：<span>68865700</span></li>
+							<li>本月结算：<span>￥68865700</span></li>
+							<li>本月订单总数：<span>185563</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--main-content-->
+		<div id="warp" class="clearfix">
+			<div class="menu">
+				<dl class="cur" style="border-color:#999;">
+					<dt><a href="Main-index.html" style="background-color:#d44831; color:#fff">用户中心首页<i class="only"></i></a></dt>
+					<dd>累计分成：
+						<font color="#ea9d4f">0元</font>
+					</dd>
+					<dd>上月分成：
+						<font color="#ea9d4f">0元</font>
+					</dd>
+					<dd class="last">本月分成：
+						<font color="#ea9d4f">0元</font>
+					</dd>
+				</dl>
+				<dl class="cur" style="border-color:#999;">
+					<dt style="background-color:#f5c32a; "><a>分成排行榜<i class="only"></i></a></dt>
+					<dd><a href="Ranking-week.html">●　上周排行top10</a></dd>
+					<dd class="last"><a href="Ranking-month.html">●　上月排行top10</a></dd>
+				</dl>
+				<dl>
+					<dt><a>商品大厅<i></i></a></dt>
+					<dd><a href="Goods-index.html">●　全部商品</a></dd>
+					<dd><a href="Goods-index-mold-1.html">●　热销商品</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="Main-news.html">百花头条<i class="only"></i></a></dt>
+				</dl>
+				<dl>
+					<dt><a>订单与结算<i></i></a></dt>
+					<dd><a href="Goodsorder-index.html">●　我推广的订单</a></dd>
+					<dd class="last"><a href="Goodsorder-jsfk.html">●　结算与返款</a></dd>
+				</dl>
+				<dl>
+					<dt><a>邀请与奖励<i></i></a></dt>
+					<dd class="last"><a href="Invite-index.html">●　我的邀请链接</a></dd>
+					<dd class="last"><a href="InvitationFriends.html">●　我邀请的好友</a></dd>
+				</dl>
+				<dl>
+					<dt><a>订单统计<i></i></a></dt>
+					<dd><a href="Channel-goodsorder.html">●　商品推广统计</a></dd>
+					<dd><a href="Channel-browse.html">●　	点击量统计</a></dd>
+				</dl>
+				<dl>
+					<dt><a>资料设置<i></i></a></dt>
+					<dd><a href="Main-set.html">●　基本信息</a></dd>
+					<dd class="last"><a href="Main-setpwd.html">●　修改密码</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="Point-index.html">积分兑奖<i class="only"></i></a></dt>
+				</dl>
+				<dl class="cur">
+					<dt><a href="Remind-index.html">订单提醒<i class="only"></i></a></dt>
+				</dl>
+				<dl>
+					<dt><a href="Main-outlogin.html">退出登录<i class="only"></i></a></dt>
+				</dl>
+				<div style="display:none;">
+				</div>
+			</div>
+	<div id="main" class="clearfix">
+	<h2>
+		订单提醒
+	</h2>
+	<div class="uc">
+		<form class="comform" name="editpw" action="/Home-Remind-handle.html"
+		method="post">
+			<ul>
+				<li>
+					<label>
+						<b>
+							提醒方式：
+						</b>
+						<input type="radio" name="type" checked="" id="sms" value="1">
+						&nbsp;短信&nbsp;
+						<input type="radio" name="type" id="mail" value="2">
+						&nbsp;邮件&nbsp;
+					</label>
+				</li>
+				<li>
+					<label>
+						<b>
+							运行状态：
+						</b>
+						<input type="radio" name="status" value="1">
+						&nbsp;开启&nbsp;
+						<input type="radio" name="status" value="2" checked="">
+						&nbsp;关闭&nbsp;
+					</label>
+				</li>
+				<li>
+					<label>
+						<b>
+							通知时间：
+						</b>
+						<select name="remind_time[b_time]" style="width:110px;height:39px;">
+							<option value="">
+								开始时间
+							</option>
+							<option value="0">
+								0:00
+							</option>
+							<option value="1">
+								1:00
+							</option>
+							<option value="2">
+								2:00
+							</option>
+							<option value="3">
+								3:00
+							</option>
+							<option value="4">
+								4:00
+							</option>
+							<option value="5">
+								5:00
+							</option>
+							<option value="6">
+								7:00
+							</option>
+							<option value="7">
+								7:00
+							</option>
+							<option value="8">
+								8:00
+							</option>
+							<option value="9">
+								9:00
+							</option>
+							<option value="10">
+								10:00
+							</option>
+							<option value="11">
+								11:00
+							</option>
+							<option value="12">
+								12:00
+							</option>
+							<option value="13">
+								13:00
+							</option>
+							<option value="14">
+								14:00
+							</option>
+							<option value="15">
+								15:00
+							</option>
+							<option value="17">
+								17:00
+							</option>
+							<option value="18">
+								18:00
+							</option>
+							<option value="19">
+								19:00
+							</option>
+							<option value="20">
+								20:00
+							</option>
+							<option value="21">
+								21:00
+							</option>
+							<option value="22">
+								22:00
+							</option>
+							<option value="23">
+								23:00
+							</option>
+							<option value="24">
+								24:00
+							</option>
+						</select>
+						&nbsp;-&nbsp;
+						<select name="remind_time[e_time]" style="width:110px;height:39px;">
+							<option value="">
+								结束时间
+							</option>
+							<option value="0">
+								0:00
+							</option>
+							<option value="1">
+								1:00
+							</option>
+							<option value="2">
+								2:00
+							</option>
+							<option value="3">
+								3:00
+							</option>
+							<option value="4">
+								4:00
+							</option>
+							<option value="5">
+								5:00
+							</option>
+							<option value="6">
+								7:00
+							</option>
+							<option value="7">
+								7:00
+							</option>
+							<option value="8">
+								8:00
+							</option>
+							<option value="9">
+								9:00
+							</option>
+							<option value="10">
+								10:00
+							</option>
+							<option value="11">
+								11:00
+							</option>
+							<option value="12">
+								12:00
+							</option>
+							<option value="13">
+								13:00
+							</option>
+							<option value="14">
+								14:00
+							</option>
+							<option value="15">
+								15:00
+							</option>
+							<option value="17">
+								17:00
+							</option>
+							<option value="18">
+								18:00
+							</option>
+							<option value="19">
+								19:00
+							</option>
+							<option value="20">
+								20:00
+							</option>
+							<option value="21">
+								21:00
+							</option>
+							<option value="22">
+								22:00
+							</option>
+							<option value="23">
+								23:00
+							</option>
+							<option value="24">
+								24:00
+							</option>
+						</select>
+					</label>
+					<i>
+					</i>
+				</li>
+				<li id="phone_input">
+					<label>
+						<b>
+							通知手机：
+						</b>
+						<input type="text" name="phone" value="">
+					</label>
+					<i>
+					</i>
+				</li>
+				<li id="mail_input" style="display:none;">
+					<label>
+						<b>
+							通知邮箱：
+						</b>
+						<input type="text" name="mail" value="">
+					</label>
+					<i>
+					</i>
+				</li>
+				<li class="no-label">
+					<button type="submit" class="big">
+						提 交
+					</button>
+				</li>
+			</ul>
+			<input type="hidden" name="__hash__" value="f55d2f8c813f65cb832bbb4a823f4dc0_ca14fffefffd2c0c23e3d3b480152e0c">
+		</form>
+		<h5>
+			重要说明
+		</h5>
+		<div class="notice">
+			1、订单提醒分为
+			<b style="color:red;">
+				"短信提醒"
+			</b>
+			、
+			<b style="color:red;">
+				"邮件提醒"
+			</b>
+			。（两种方式同时只可以选择一种）
+			<br>
+			2、订单提醒只在
+			<b style="color:red;">
+				客户下单
+			</b>
+			时进行提醒。
+			<br>
+			3、"短信提醒"默认发送到注册时
+			<b style="color:red;">
+				预留手机号中
+			</b>
+			。
+			<br>
+			4、如"邮件提醒"无法收到邮件或邮件进入垃圾箱，可以将该邮箱
+			<b style="color:red;">
+				"4000727771@b.qq.com"
+			</b>
+			添加到白名单中。
+			<br>
+			5、将邮箱与微信绑定可以更方便接收。
+			<a target="_blank" href="http://jingyan.baidu.com/article/ed2a5d1f3eced209f6be1739.html">
+				如何绑定?
+			</a>
+			<br>
+			6、通知时间不选择则表示全天通知。
+		</div>
+	</div>
+</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.menu dl').has('dd').not('.cur').find('dt').click(function() {
+				$(this).blur();
+				o = $(this).parent();
+				o.toggleClass('expand');
+			});
+			$('.tooltip').hover(function() {
+				$(this).find('span').show();
+			}, function() {
+				$(this).find('span').hide();
+			});
+		});
+	</script>
+	<script type="text/javascript" src="js/ZeroClipboard.js"></script>
+	<script type="text/javascript">
+		// 定义一个新的复制对象
+		var clip = new ZeroClipboard(document.getElementById("yqm"), {
+			moviePath: "http://www.fxb.so/Data/copy/ZeroClipboard.swf?nocache=1468136706544"
+		});
+
+		// 复制内容到剪贴板成功后的操作
+		clip.on('complete',
+			function(client, args) {
+				alert("复制成功，复制内容为：" + args.text);
+			});
+
+		var clip = new ZeroClipboard(document.getElementById("yqurl"), {
+			moviePath: "./Data/copy/ZeroClipboard.swf"
+		});
+
+		//// 复制内容到剪贴板成功后的操作
+		clip.on('complete', function(client, args) {
+			alert("复制成功，复制内容为：" + args.text);
+		});
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			$("#ewm").hover(function() {
+					$('#qrcode').show();
+				},
+				function() {
+					$('#qrcode').hide();
+				})
+		})
+	</script>
+
+</html>
