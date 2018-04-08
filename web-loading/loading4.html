@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loading动画实现</title>
+</head>
+<style type="text/css">
+    body{
+        text-align:center;
+    }
+    .container{
+        display: inline-block;
+    }
+    .point{
+        width:10px;
+        height:10px;
+        background:#2196F3;
+        border-radius:50%;
+        float:left;
+        margin-left:5px;
+        animation:myAnima 1.2s ease-in-out infinite; 
+    }
+    .two{
+        animation-delay: 200ms;
+    }
+    .three{
+        animation-delay: 400ms;
+    }
+    @keyframes myAnima{
+        from {opacity: 0.8}
+        to{opacity: 0}
+    }
+</style>
+<body>
+<div class="container">
+    <div class="point one"></div>    
+    <div class="point two"></div>    
+    <div class="point three"></div>    
+</div>
+</body>
+</html>

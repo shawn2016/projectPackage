@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+		<link rel="stylesheet" type="text/css" href="css/actionsheet.css" />
+	</head>
+
+	<body>
+		<button id="actionsheet">actionsheet</button>
+		<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript">
+			$('#actionsheet').bind('click', function() {
+				var actionsheet = new Actionsheet();
+				actionsheet.showActionsheet({
+					buttons: [{
+						text: '<b>Share</b> This'
+					}, {
+						text: 'Move'
+					}],
+					destructiveText: 'Delete',
+					titleText: 'Modify your album',
+					cancelText: 'Cancel',
+					btnSure: function(index) {					
+                   console.log(index);
+					}
+				});
+				$("#picture").css('display', 'block');　　
+				setTimeout(function() {　　　
+					$('#picture').addClass('mui-active');　　
+				}, 100)
+			})
+			$(document).bind('click', function() {
+				if ($('#picture').hasClass('mui-active')) {
+					var actionsheet = new Actionsheet();
+					$('#picture').removeClass('mui-active');
+					setTimeout(function() {　　　
+						actionsheet.hideActionsheet();
+					}, 200)
+				}
+			})
+		</script>
+	</body>
+
+</html>

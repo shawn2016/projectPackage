@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS3悬停显示二维码返回顶部代码</title>
+
+<link type="text/css" rel="stylesheet" href="css/style.css">
+
+</head>
+<body style="height:2000px;">
+<div class="toolbar">
+   <a href="###" class="toolbar-item toolbar-item-weixin">
+   <span class="toolbar-layer"></span>
+   </a>
+   <a href="###" class="toolbar-item toolbar-item-feedback"></a>
+   <a href="###" class="toolbar-item toolbar-item-app">
+    <span class="toolbar-layer"></span>
+   </a>
+   <a  id="top" class="toolbar-item toolbar-item-top"></a>
+   <!-- href="javascript:scroll(0,0)" -->
+</div>
+
+
+</div>
+<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+<script type="text/javascript">
+$('#top').bind('click',function(){
+	$("html,body").animate({scrollTop: 0}, 600);});
+</script>
+</body>
+</html>

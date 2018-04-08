@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>star-rating-svg</title>
+		<link rel="stylesheet" type="text/css" href="src/css/star-rating-svg.css">
+	</head>
+
+	<body>
+		<div class="htmleaf-container">
+
+			<div class="htmleaf-content">
+				<h2>examples</h2>
+				<pre class="pre-show prettyprint">
+// basic example
+&lt;div class="my-rating">&lt;/div&gt;
+</pre>
+
+				<div class="my-rating jq-stars"></div>
+
+				<pre class="pre-show prettyprint">
+$(".my-rating").starRating({
+    initialRating: 4,
+    starSize: 25
+});
+</pre>
+
+				<hr>
+
+				<pre class="pre-show prettyprint">
+// grab rating from a data attribute
+&lt;div&gt; class="my-rating-2" data-rating="2.5">&lt;/div&gt;
+</pre>
+
+				<!-- example grabing rating from markup -->
+				<div class="my-rating-2" data-rating="2.5"></div>
+
+				<pre class="pre-show prettyprint">
+$(".my-rating-2").starRating({
+    totalStars: 5,
+    starSize: 40,
+    emptyColor: 'lightgray',
+    hoverColor: 'salmon',
+    activeColor: 'crimson',
+    useGradient: false
+});
+</pre>
+
+				<hr>
+
+				<pre class="pre-show prettyprint">
+// define a gradient
+&lt;div&gt; class="my-rating-3">&lt;/div&gt;
+</pre>
+
+				<!-- example using gradient -->
+				<div class="my-rating-3" data-rating="3.3"></div>
+
+				<pre class="pre-show prettyprint">
+// specify the gradient start and end for the selected stars
+$(".my-rating-3").starRating({
+    starSize: 80,
+    strokeWidth: 9,
+    strokeColor: 'black',
+    initialRating: 2,
+    starGradient: {
+        start: '#93BFE2',
+        end: '#105694'
+    },
+});
+</pre>
+
+				<hr>
+
+				<pre class="pre-show prettyprint">
+// execute callback when rating
+&lt;div&gt; class="my-rating-4">&lt;/div&gt;
+</pre>
+
+				<!-- example using callback -->
+				<div class="my-rating-4"></div>
+
+				<pre class="pre-show prettyprint">
+$(".my-rating-4").starRating({
+    totalStars: 5,
+    emptyColor: 'lightgray',
+    hoverColor: 'salmon',
+    activeColor: 'cornflowerblue',
+    initialRating: 4,
+    strokeWidth: 0,
+    useGradient: false,
+    callback: function(currentRating, $el){
+        alert('rated ', currentRating);
+        console.log('DOM element ', $el);
+    }
+});
+</pre>
+
+				<hr>
+
+				<pre class="pre-show prettyprint">
+// read only mode
+&lt;div&gt; class="my-rating-4">&lt;/div&gt;
+</pre>
+
+				<!-- example read-only -->
+				<div class="my-rating-5"></div>
+
+				<pre class="pre-show prettyprint">
+$(".my-rating-5").starRating({
+    readOnly: true
+});
+</pre>
+
+				<hr>
+
+				<pre class="pre-show prettyprint">
+// unloading the plugin instance
+$(".my-rating").starRating('unload');
+</pre>
+
+				<hr>
+				<!-- example fullstars -->
+
+				<pre class="pre-show prettyprint">
+// use full stars only
+&lt;div&gt; class="my-rating-6">&lt;/div&gt;
+</pre>
+
+				<div class="my-rating-6"></div>
+
+				<pre class="pre-show prettyprint">
+$(".my-rating-6").starRating({
+    useFullStars: true
+});
+</pre>
+			</div>
+			<div class="related">
+				<h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+				<a href="http://www.htmleaf.com/jQuery/Rating-Star-Rating/201501221245.html">
+					<img src="related/1.jpg" width="300" alt="基于SVG的jQuery星级评分插件-jRate" />
+					<h3>基于SVG的jQuery星级评分插件-jRate</h3>
+				</a>
+				<a href="http://www.htmleaf.com/jQuery/Rating-Star-Rating/201512252949.html">
+					<img src="related/2.jpg" width="300" alt="Ratyli-简单的jQuery星级评分插件" />
+					<h3>Ratyli-简单的jQuery星级评分插件</h3>
+				</a>
+			</div>
+		</div>
+
+		<script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')
+		</script>
+		<script src="src/jquery.star-rating-svg.js"></script>
+		<script>
+			$(function() {
+/*       参数	                               默认值	                        描述
+		totalStars	5	显示的星星的数量
+		initialRating	0	初始化时选择的星星的数量
+		starSize	40	星星的尺寸，单位像素
+		useFullStars	false	是否只能选择整颗星星，如果为true，则不能选择半颗星星
+		emptyColor	lightgray	空星星的颜色
+		hoverColor	orange	鼠标滑过星星时的颜色
+		activeColor	gold	鼠标点击后星星的颜色
+		useGradient	true	激活的星星使用渐变色
+		starGradient	{start: '#FEF7CD',
+		end: '#FF9511'}	定义渐变的开始和结束颜色
+		readOnly	false	是否为只读状态
+		disableAfterRate	true	在星星被选择之后移除该星星的所有事件
+		strokeWidth	0	定义描边的宽度，0表示无描边
+		strokeColor	black	定义描边的颜色
+ *  unload	卸载插件和它的所有事件    $('your-selector').starRating('unload') 
+ * callback	rating, DOM元素	当星星被选择时触发
+ * $('your-selector').starRating({
+    callback: function(currentRating, $el){
+        // do something after rating
+    }
+}); 
+ */
+				// basic use comes with defaults values
+				$(".my-rating").starRating({
+					initialRating: 4,
+					starSize: 25,
+					callback: function(currentRating, $el) {
+						// do something after rating
+						console.log(currentRating, $el);
+					}
+				});
+
+				// example grabing rating from markup, and custom colors
+				$(".my-rating-2").starRating({
+					totalStars: 5,
+					starSize: 40,
+					emptyColor: 'lightgray',
+					hoverColor: 'salmon',
+					activeColor: 'crimson',
+					useGradient: false
+				});
+
+				// specify the gradient start and end for the selected stars
+				$(".my-rating-3").starRating({
+					starSize: 80,
+					strokeWidth: 9,
+					strokeColor: 'black',
+					initialRating: 2,
+					starGradient: {
+						start: '#93BFE2',
+						end: '#105694'
+					},
+				});
+
+				$(".my-rating-4").starRating({
+					totalStars: 5,
+					emptyColor: 'lightgray',
+					hoverColor: 'salmon',
+					activeColor: 'cornflowerblue',
+					initialRating: 4,
+					strokeWidth: 0,
+					useGradient: false,
+					callback: function(currentRating, $el) {
+						alert('rated ' + currentRating);
+						console.log('DOM Element ', $el);
+					}
+				});
+
+				$(".my-rating-5").starRating({
+					initialRating: 4,
+					readOnly: true
+				});
+
+				$(".my-rating-6").starRating({
+					useFullStars: true
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

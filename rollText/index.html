@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JS新闻公告文字逐条向上翻滚代码</title>
+<style type="text/css">
+#rollText{font:12px /20px verdana;}
+</style>
+</head>
+<body>
+<title>文字滚动</title>
+<div id="rollAD" style="height:20px; position:relative; width:400px; margin:0 auto;overflow:hidden;">
+<div id="rollText" style="font-size:12px; line-height:20px;">
+<a href="http://www.lanrenzhijia.com" target="_parent">·flash+xml全屏整站图片查看效果(适合汽车类网站</a><br />
+<a href="http://www.lanrenzhijia.com" target="_parent">·简洁实用的jquery图像栅格导航菜单</a><br />
+<a href="http://www.lanrenzhijia.com" target="_parent">·jquery弹性手风琴(导航菜单)效果</a><br />
+<a href="http://www.lanrenzhijia.com" target="_parent">·js四屏缩略图焦点幻灯片代码</a><br />
+<a href="http://www.lanrenzhijia.com" target="_parent">·jquery自动感应多级下拉导航菜单</a><br />
+<a href="http://www.lanrenzhijia.com" target="_parent">·jquery图片在线拼图效果</a><br />
+<a href="http://www.lanrenzhijia.com" target="_parent">·带缩略图块状切换支持视频播放的幻灯片</a><br />
+<a href="http://www.lanrenzhijia.com" target="_parent">·css3图片放大缩小切换幻灯片效果</a><br />
+<a href="http://www.lanrenzhijia.com" target="_parent">·始终保持背景图片全屏(切换样式可控制)</a><br />
+	</div>
+</div>
+<script type="text/javascript">
+// <![CDATA[
+var textDiv = document.getElementById("rollText");
+var textList = textDiv.getElementsByTagName("a");
+if(textList.length > 2){
+	var textDat = textDiv.innerHTML;
+	var br = textDat.toLowerCase().indexOf("<br",textDat.toLowerCase().indexOf("<br")+3);
+	//var textUp2 = textDat.substr(0,br);
+	textDiv.innerHTML = textDat+textDat+textDat.substr(0,br);
+	textDiv.style.cssText = "position:absolute; top:0";
+	var textDatH = textDiv.offsetHeight;MaxRoll();
+}
+var minTime,maxTime,divTop,newTop=0;
+function MinRoll(){
+	newTop++;
+	if(newTop<=divTop+20){
+		textDiv.style.top = "-" + newTop + "px";
+	}else{
+		clearInterval(minTime);
+		maxTime = setTimeout(MaxRoll,3000);
+	}
+}
+function MaxRoll(){
+	divTop = Math.abs(parseInt(textDiv.style.top));
+	if(divTop>=0 && divTop<textDatH-20){
+		minTime = setInterval(MinRoll,1);
+	}else{
+		textDiv.style.top = 0;divTop = 0;newTop=0;MaxRoll();
+	}
+}
+// ]]>
+</script>
+</body>
+</html>

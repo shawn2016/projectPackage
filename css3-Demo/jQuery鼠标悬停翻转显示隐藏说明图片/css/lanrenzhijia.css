@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+*{ margin:0; padding:0; list-style:none;}
+img{ border:0;}
+
+.qixi{ width:960px; height:375px; margin:0 auto; overflow:hidden; background:#F23F9E; position:relative;}
+.relian{ width:240px; height:239px; overflow:hidden; position:absolute; left:10px; top:10px;}
+.relian .pic{width:240px; height:239px; position:relative;}
+.relian .pic2{ width:240px; height:478px; overflow:hidden; position:absolute; left:0; top:0;}
+
+.miyue{ width:385px; height:178px; overflow:hidden; position:absolute; left:255px; top:10px;}
+.miyue .pic{width:385px; height:178px; position:relative;}
+.miyue .pic2{ width:385px; height:356px; overflow:hidden; position:absolute; left:0; top:0;}
+
+.qinzi{ width:306px; height:178px; overflow:hidden; position:absolute; left:645px; top:10px;}
+.qinzi .pic{width:306px; height:178px; position:relative;}
+.qinzi .pic2{ width:306px; height:356px; overflow:hidden; position:absolute; left:0; top:0;}
+
+.jiqing{ width:240px; height:112px; overflow:hidden; position:absolute; left:10px; top:255px;}
+.jiqing .pic{width:240px; height:112px; position:relative;}
+.jiqing .pic2{ width:240px; height:224px; overflow:hidden; position:absolute; left:0; top:0;}
+
+.xfq{ width:200px; height:173px; overflow:hidden; position:absolute; left:255px; top:194px;}
+.xfq .pic{width:200px; height:173px; position:relative;}
+.xfq .pic2{ width:200px; height:346px; overflow:hidden; position:absolute; left:0; top:0;}
+
+.qianshou{ width:314px; height:173px; overflow:hidden; position:absolute; left:460px; top:194px;}
+.qianshou .pic{width:314px; height:173px; position:relative;}
+.qianshou .pic2{ width:314px; height:346px; overflow:hidden; position:absolute; left:0; top:0;}
+
+.jiqing2{ width:170px; height:173px; overflow:hidden; position:absolute; right:10px; top:194px;}
+.jiqing2 .pic{width:170px; height:173px; position:relative;}
+.jiqing2 .pic2{ width:170px; height:346px; overflow:hidden; position:absolute; left:0; top:0;}
+
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

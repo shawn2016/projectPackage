@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>jQuery鼠标悬停图片四处裂显示文字特效</title>
+<link href="css/lanrenzhijia.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- 代码begin -->
+<div class="infoCon">
+
+  <div class="qitem"><a href="#"><img src="http://demo.lanrenzhijia.com/2014/pic0828/images/listpic01.jpg"></a> 
+   <span class="caption" id="teshu2">
+    <p>双语环境<br>
+      多元社交互动<br>
+      全方位启蒙<br>
+      非亲子课程<br>
+      缓释分离焦虑<br>
+      玩具与教具的世界</p>
+    </span>
+  </div>
+  
+  <div class="qitem"><a href="#"><img src="http://demo.lanrenzhijia.com/2014/pic0828/images/listpic02.jpg"></a> 
+   <span class="caption">
+    <p> 国际获奖教材，十门精彩学科<br>
+      提前适应课堂，顺利幼小衔接<br>
+      关注每个孩子，寓教于乐<br>
+      激发英语学习兴趣，培养母语思维<br>
+      CLIL融入式教学方法<br>
+      全英文环境，多元智能培 </p>
+    </span>
+  </div>
+   
+</div>
+    
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script src="http://demo.lanrenzhijia.com/2014/pic0828/js/jquery.easing.min.js"></script>
+<script>
+$(function(){
+	  var style_in = 'easeOutBounce';
+  var style_out = 'jswing';
+  var speed_in = 1000;
+  var speed_out = 300;  
+
+  //Calculation for corners
+  var neg = Math.round($('.qitem').width() / 2) * (-1); 
+  var pos = neg * (-1); 
+  var out = pos * 2;
+  
+  $('.qitem').each(function () {
+  
+    url = $(this).find('a').attr('href');
+    img = $(this).find('img').attr('src');
+    alt = $(this).find('img').attr('img');
+    
+    $('img', this).remove();
+    $(this).append('<div class="topLeft"></div><div class="topRight"></div><div class="bottomLeft"></div><div class="bottomRight"></div>');
+    $(this).children('div').css('background-image','url('+ img + ')');
+
+    $(this).find('div.topLeft').css({top:0, left:0, width:pos , height:pos}); 
+    $(this).find('div.topRight').css({top:0, left:pos, width:pos , height:pos});  
+    $(this).find('div.bottomLeft').css({bottom:0, left:0, width:pos , height:pos}); 
+    $(this).find('div.bottomRight').css({bottom:0, left:pos, width:pos , height:pos});  
+
+  }).hover(function () {
+  
+    $(this).find('div.topLeft').stop(false, true).animate({top:neg, left:neg}, {duration:speed_out, easing:style_out}); 
+    $(this).find('div.topRight').stop(false, true).animate({top:neg, left:out}, {duration:speed_out, easing:style_out});  
+    $(this).find('div.bottomLeft').stop(false, true).animate({bottom:neg, left:neg}, {duration:speed_out, easing:style_out}); 
+    $(this).find('div.bottomRight').stop(false, true).animate({bottom:neg, left:out}, {duration:speed_out, easing:style_out});  
+  },
+  function () {
+
+    $(this).find('div.topLeft').stop(false, true).animate({top:0, left:0}, {duration:speed_in, easing:style_in}); 
+    $(this).find('div.topRight').stop(false, true).animate({top:0, left:pos}, {duration:speed_in, easing:style_in});  
+    $(this).find('div.bottomLeft').stop(false, true).animate({bottom:0, left:0}, {duration:speed_in, easing:style_in}); 
+    $(this).find('div.bottomRight').stop(false, true).animate({bottom:0, left:pos}, {duration:speed_in, easing:style_in});  
+  
+  }).click (function () {
+	window.open($(this).find('a').attr('href'));
+    //window.location = $(this).find('a').attr('href'); 
+  });
+});
+</script>
+<!-- 代码end -->
+</body>
+</html>
