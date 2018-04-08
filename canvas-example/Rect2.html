@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style type="text/css">
+        canvas{border:dashed 2px #CCC}
+    </style>
+    <script type="text/javascript">
+        function $$(id){
+            return document.getElementById(id);
+        }
+        function pageLoad(){
+            var can = $$('can');
+            var cans = can.getContext('2d');
+            var gnt1 = cans.createLinearGradient(10,0,390,0);
+            gnt1.addColorStop(0,'red');
+            gnt1.addColorStop(0.5,'green');
+            gnt1.addColorStop(1,'blue');
+            cans.fillStyle = gnt1;
+            cans.fillRect(10,10,380,280);
+        }
+    </script>
+    <body onload="pageLoad();">
+    	不解释了，记住fillRect（X,Y,Width,Height）就行了
+        <canvas id="can" width="400px" height="300px">4</canvas>
+    </body>
+</html>

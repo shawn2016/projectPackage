@@ -1,0 +1,1 @@
+export const OIND_GETDATA = 'OIND_GETDATA'

@@ -1,0 +1,34 @@
+{
+  "name": "jssdk",
+  "version": "1.0.0",
+  "description": "融数沃雷特支付JSSDK",
+  "main": "index.js",
+  "scripts": {
+    "mvdist": "rm -rf ./dist",
+    "start": "webpack-dev-server --config webpack.dev.config.babel.js --progress  --colors --watch",
+    "build": "npm run mvdist && webpack --config webpack.build.config.babel.js --env --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://daizhixiang:MyNqsaZrf2U@git.rswallet.com/rswallet/JSSDK.git"
+  },
+  "author": "shawn",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "copy-webpack-plugin": "^4.1.1",
+    "html-webpack-plugin": "^2.30.1",
+    "open": "0.0.5",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "dependencies": {
+    "fastclick": "^1.0.6",
+    "md5": "^2.2.1",
+    "webpack-merge": "^4.1.1",
+    "yargs": "^10.0.3"
+  }
+}

@@ -1,0 +1,72 @@
+.rob-upload-loading{
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    height: 100%;
+    background: rgba(62, 62, 62, 0.53);
+    text-align: center;
+    color: #fff;
+    padding-top: 35px;
+  }
+  .bd-top0{
+    border-top: 0!important;
+  }
+  .qb-listdesc-g__content__desc{
+    white-space:normal; word-break:break-all;
+  }
+  .dotting {
+    display: inline-block; min-width: 2px; min-height: 2px;
+    box-shadow: 2px 0 currentColor, 6px 0 currentColor, 10px 0 currentColor; /* for IE9+, ..., 3个点 */
+    animation: dot 4s infinite step-start both; /* for IE10+, ... */
+}
+.dotting:before { content: '...'; } /* for IE8. 若无需兼容IE8, 此行以及下一行删除*/
+.dotting::before { content: ''; } /* for IE9+ 覆盖 IE8 */
+:root .dotting { margin-right: 8px; } /* for IE9+,FF,CH,OP,SF 占据空间*/
+
+@keyframes dot {
+    25% { box-shadow: none;}                                  /* 0个点 */
+    50% { box-shadow: 2px 0 currentColor; }                    /* 1个点 */
+    75% { box-shadow: 2px 0 currentColor, 6px 0 currentColor;  /* 2个点 */ }
+}
+.footerTel{
+  color: #393939;
+  font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .rob-file-icon {
+    background: url(../../assets/images/fileicon.png) -143px -336px no-repeat;
+    width: 50px;
+    margin-top: 11px;
+    height: 64px;
+    display: inline-block;
+    vertical-align: middle; }
+    .rob-file-icon.rob-file-icon-word {
+      background-position: -20px -33px; }
+    .rob-file-icon.rob-file-icon-pdf {
+      background-position: -80px -33px; }
+    .rob-file-icon.rob-file-icon-csv {
+      background-position: -140px -33px; }
+    .rob-file-icon.rob-file-icon-jpg {
+      background-position: -200px -33px; }
+    .rob-file-icon.rob-file-icon-zip {
+      background-position: -260px -33px; }
+      .rob-select .rob-select-box{
+        padding-right: 20px;
+        overflow: hidden;
+        overflow:hidden; /*超出的部分隐藏起来。*/ 
+        white-space:nowrap;/*不显示的地方用省略号...代替*/
+        text-overflow:ellipsis;/* 支持 IE */
+      }
+      .rob-select.open .rob-select-items{
+        max-height: 180px;        
+      }
+      [type="checkbox"].rob-checkbox-filled-in:disabled:not(:checked) + label:after{
+        border: 2px solid rgba(157, 162, 165, 0.3);
+        cursor: not-allowed;
+      }
+      .text-zuo{
+        text-align: left
+      }
+        .limit-group-form .rob-form-group::after {
+          clear:initial;
+        }

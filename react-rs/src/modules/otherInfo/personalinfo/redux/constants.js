@@ -1,0 +1,1 @@
+export const PIQY_GETDATA = 'PIQY_GETDATA'

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>垂直水平居中</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .div1 {
+            background: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+
+        .div2 {
+            background: yellow;
+            position: relative;
+            height: 300px;
+        }
+
+        .div2-child {
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .div3 {
+            background: green;
+            height: 300px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .div3-child {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">垂直水平居中</h1>
+    <h3>
+        使用Flex
+    </h3>
+    <div class="div1">
+        垂直水平居中-flex
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>
+        使用transform
+    </h3>
+    <div class="div2">
+        <div class="div2-child">
+            垂直水平居中-transform
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>
+        使用 display:table-cell 方法
+    </h3>
+    <div class="div3">
+        <div class="div3-child">
+            垂直水平居中-table-cell
+        </div>
+    </div>
+</body>
+
+</html>

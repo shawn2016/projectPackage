@@ -1,0 +1,1 @@
+export const OICI_GETDATA = 'OICI_GETDATA'

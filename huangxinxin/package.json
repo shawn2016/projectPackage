@@ -1,0 +1,34 @@
+{
+  "name": "rsjf-platform",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp run",
+    "build": "gulp buildzip"
+  },
+  "devDependencies": {
+    "amd-optimize": "^0.6.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.1.0",
+    "gulp-htmlmin": "^1.1.4",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "3.0.1",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-rev-all": "0.8.21",
+    "gulp-rev-collector": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.4.1",
+    "gulp-watch": "^4.3.8",
+    "gulp-zip": "^3.2.0",
+    "requirejs": "^2.1.20",
+    "yargs": "^6.3.0"
+  },
+  "dependencies": {
+    "angularjs": "0.0.1",
+    "browser-sync": "^2.14.0",
+    "gulp-useref": "^3.1.0",
+    "ng-infinite-scroll": "^1.3.0"
+  }
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style type="text/css">
+        canvas{border:dashed 2px #CCC}
+    </style>
+    <script type="text/javascript">
+        function $$(id){
+            return document.getElementById(id);
+        }
+        function pageLoad(){
+            var can = $$('can');
+            var cans = can.getContext('2d');
+            cans.moveTo(0,30);//第一个起点
+            cans.lineTo(120,90);//第二个点
+            cans.lineTo(20,60);//第三个点（以第二个点为起点）
+            cans.lineWidth=3;
+            cans.strokeStyle = 'red';
+            cans.stroke();
+        }
+    </script>
+    <body onload="pageLoad();">
+    	这里用到的两个API方法，moveTo和lineTo分别是线段的起点和终点坐标，变量为（X坐标,Y坐标）,strokeStyle、stroke分别路径绘制样式和绘制路径。
+        <canvas id="can" width="400px" height="300px">4</canvas>
+    </body>
+</html>

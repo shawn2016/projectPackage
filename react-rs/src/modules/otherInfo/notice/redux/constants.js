@@ -1,0 +1,2 @@
+export const OIOT_GETDATA = 'OIOT_GETDATA'
+export const OIOT_DELDATA = 'OIOT_DELDATA'

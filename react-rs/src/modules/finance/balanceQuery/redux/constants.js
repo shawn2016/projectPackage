@@ -1,0 +1,2 @@
+export const FBQ_DIVIDE11 = 'FBQ_DIVIDE11'
+export const FBQ_GETLIST = 'FBQ_GETLIST'

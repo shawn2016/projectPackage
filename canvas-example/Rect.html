@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style type="text/css">
+        canvas{border:dashed 2px #CCC}
+    </style>
+    <script type="text/javascript">
+        function $$(id){
+            return document.getElementById(id);
+        }
+        function pageLoad(){
+            var can = $$('can');
+            var cans = can.getContext('2d');
+            //填充颜色
+//          cans.fillStyle = 'yellow';
+//          cans.fillRect(30,30,340,240);
+             cans.strokeStyle = 'red';
+            cans.strokeRect(30,30,340,240);
+        }
+    </script>
+    <body onload="pageLoad();">
+        <canvas id="can" width="400px" height="300px">4</canvas>
+    </body>
+</html>

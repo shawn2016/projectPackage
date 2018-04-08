@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style type="text/css">
+        canvas{border:dashed 2px #CCC}
+    </style>
+    <script type="text/javascript">
+        function $$(id){
+            return document.getElementById(id);
+        }
+        function pageLoad(){
+            var can = $$('can');
+            var cans = can.getContext('2d');
+
+            var gnt = cans.createRadialGradient(200,150,0,200,50,250);
+            //这里需要说明的是createRadialGradient方法，参数有（Xstart,Ystart,radiusStart,XEnd,YEnd,radiusEnd），也就是说，它在实行渐变时，使用了两个圆，
+            //一个是原始的圆，一个是渐变式圆，其实，这种通过坐标与半径控制的方式可以实现很多样式
+         gnt.addColorStop(0,'red');
+gnt.addColorStop(1,'#333');
+            cans.fillStyle = gnt;
+            cans.arc(200,150,100,0,Math.PI*2,true);
+            cans.fill();
+        }
+    </script>
+    <body onload="pageLoad();">
+        <canvas id="can" width="800px" height="600px">4</canvas>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+export const SMRD_RULEINFO = Symbol('SMRD_RULEINFO')
+export const SMRD_RULEFLOWINFO = Symbol('SMRD_RULEFLOWINFO')

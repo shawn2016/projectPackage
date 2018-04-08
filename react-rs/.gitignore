@@ -1,0 +1,6 @@
+node_modules
+dist/
+\.DS_Store
+react-robotUI/\.DS_Store
+src/assets/\.DS_Store
+src/assets/images/img-loading\.gif

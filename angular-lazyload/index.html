@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo">
+<head>
+    <meta charset="UTF-8">
+    <title>me-lazyload</title>
+    <style>
+        .title{
+            text-align: center;
+            font-size: 28px;
+            margin: 40px 0 10px 0;
+        }
+        .container{
+            width:102px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        .wrap{
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+        .wrap img{
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body ng-controller="mainCtrl">
+    <h2 class="title">me-lazyload</h2>
+    <div class="container">
+        <div class="wrap" ng-repeat="img in images">
+            <img lazy-src="{{img}}" alt="">
+        </div>
+    </div>
+
+
+
+    <script src="http://cdn.staticfile.org/angular.js/1.2.18/angular.min.js"></script>
+    <script src="js/me-lazyload.js"></script>
+    <script>
+        angular.module('demo', ['me-lazyload'])
+        .controller('mainCtrl', ['$scope', function($scope){
+            var url = 'img/m.jpg?s=100';
+            var ary = [];
+            for(var i = 0; i < 40; i++){
+                ary.push(url + '&t=' + i + (+new Date()))
+            }
+
+            $scope.images = ary;
+        }])
+    </script>
+</body>
+</html>

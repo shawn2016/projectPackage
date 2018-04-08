@@ -1,0 +1,3 @@
+
+export const GETUSERINFO = 'GETUSERINFO'
+export const GETUSERPROCESS = 'GETUSERPROCESS'

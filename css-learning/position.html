@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position</title>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        .box-container1 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 50px;
+            left: 10px;
+            background: red;
+        }
+
+        .box-container2 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background: yellow;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            background: red;
+            top: 10px;
+            left: 10px;
+        }
+
+        .box-container3 {
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            background: green;
+            top: 600px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">relative</h1>
+    <div class="box-container1">
+        <div class="box1 text-center">relative</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1 class="text-center">absolute</h1>
+    <div class="box-container2">
+        <div class="box2 text-center">absolute</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1 class="text-center">fixed</h1>
+    <div class="box-container3">
+        <div class="box3 text-center">fixed</div>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga","kern";
+}
+@font-face {
+  font-family: Teambition-UI-Icons;
+  src: url(../fonts/teambition-ui-icons.5cc0da81.eot);
+  src: url(../fonts/teambition-ui-icons.5cc0da81.eot?#iefix) format('embedded-opentype'),url(../fonts/teambition-ui-icons.164d5233.woff) format('woff'),url(../fonts/teambition-ui-icons.b76f89c0.ttf) format('truetype'),url(https://dn-st.teambition.net/site/v2.2.3/fonts/teambition-ui-icons.9f3c28c4.svg#teambition-ui-icons) format('svg');
+  font-weight: 400;
+  font-style: normal
+}
+html,body{
+  font-family: 'Helvetica Neue','Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;
+}
+.clearfix {
+  zoom:1}
+
+.clearfix:after,.clearfix:before {
+  content: "";
+  display: table
+}
+.mt110{
+  margin-top:110px;
+}
+.mb25{
+  margin-bottom: 25px;
+}
+.p0{
+  padding: 0;
+}
+.mr15{
+  margin-right: 15px;
+}
+.ml15{
+  margin-left: 15px;
+}
+.mt70{
+  margin-top:70px;
+}

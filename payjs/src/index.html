@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSSDK</title>
+</head>
+
+<body>
+    jjj
+    <script>
+        RSWALLET.pay({
+            company_code: "7178000623VJF91WA",
+            qr_code: "Q171010000002022",
+            open_id: "2088402386624272",
+            order_no: "5de32e78b58948f3844a7b0051b0012d",
+            channel: "30001",
+            amount: 1,
+            goods_title: "宏鑫达科技",
+            goods_desc: "吃葡萄不吐葡萄皮 打南面来了个辣妈",
+            optional: "",
+            success: function (data) { console.log('data', data) },
+            error: function (data) { console.log('data', data) }
+        });
+        RSWALLET.payInfo({
+            company_code: "7178000623VJF91WA",
+            order_no: "5de32e78b58948f3844a7b0051b0012d",
+            success: function (data) { console.log('data', data) },
+            error: function (data) { console.log('data', data) }
+        });
+    </script>
+</body>
+
+</html>
