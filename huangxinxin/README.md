@@ -16,15 +16,15 @@ gulp
 
 ### 展示
 
-![Alt text](https://github.com/shawn2016/huangxinxin/blob/master/home.png "Optional title")
+![Alt text](https://github.com/shawn2016/projectPackage/blob/master/huangxinxin/home.png "Optional title")
 
-![Alt text](https://github.com/shawn2016/huangxinxin/blob/master/list.png "Optional title")
+![Alt text](https://github.com/shawn2016/projectPackage/blob/master/huangxinxin/list.png "Optional title")
 
-![Alt text](https://github.com/shawn2016/huangxinxin/blob/master/list2.png "Optional title")
+![Alt text](https://github.com/shawn2016/projectPackage/blob/master/huangxinxin/list2.png "Optional title")
 
-![Alt text](https://github.com/shawn2016/huangxinxin/blob/master/api.png "Optional title")
+![Alt text](https://github.com/shawn2016/projectPackage/blob/master/huangxinxin/api.png"Optional title")
 
-![Alt text](https://github.com/shawn2016/huangxinxin/blob/master/about.png "Optional title")
+![Alt text](https://github.com/shawn2016/projectPackage/blob/master/huangxinxin/about.png"Optional title")
 
 ### 安装
 
