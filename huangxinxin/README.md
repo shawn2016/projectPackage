@@ -22,9 +22,9 @@ gulp
 
 ![Alt text](https://github.com/shawn2016/projectPackage/blob/master/huangxinxin/list2.png "Optional title")
 
-![Alt text](https://github.com/shawn2016/projectPackage/blob/master/huangxinxin/api.png" Optional title")
+![Alt text](https://github.com/shawn2016/projectPackage/blob/master/huangxinxin/api.png "Optional title")
 
-![Alt text](https://github.com/shawn2016/projectPackage/blob/master/huangxinxin/about.png" Optional title")
+![Alt text](https://github.com/shawn2016/projectPackage/blob/master/huangxinxin/about.png "Optional title")
 
 ### 安装
 
