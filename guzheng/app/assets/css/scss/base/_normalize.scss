@@ -1,0 +1,51 @@
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: "microsoft yahei",sans-serif;
+}
+body{
+  background: #fff;
+}
+p,
+ul,
+img,
+a img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+:focus,
+a {
+  -moz-outline-style: none;
+}
+
+a {
+  color: #444;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  -moz-outline-style: none;
+  text-decoration: none;
+  color: #333;
+}

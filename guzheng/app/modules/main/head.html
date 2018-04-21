@@ -1,0 +1,54 @@
+<div id="header">
+    <div class="container clearfix">
+        <div id="logo">
+            <a href="index.html">
+                <img title="慕课网" src="http://www.imooc.com/static/img/index/logo_new.png">
+            </a>
+        </div>
+        <div class="menuToogle">
+            <div class="mobile-inner-header-icon" ng-click="toogleMenu()" ng-class="{true:'mobile-inner-header-icon-out',false:'mobile-inner-header-icon-click'}[menuHide]"
+                ng-class="">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-box"  ng-class="{true:'isMenuHide',false:''}[menuHide]">
+            <ul class="nav" id="nav">
+                <li ng-click="toogleMenu(true)" ui-sref="homePage.index" ui-sref-active="active">
+                    <a>首页</a>
+                    <div class="nav-line"></div>
+                </li>
+                <li ng-click="toogleMenu(true)" ui-sref="homePage.docs" ui-sref-active="active">
+                    <a>产品展示</a>
+                    <div class="nav-line"></div>
+                </li>
+                <!-- <li ng-click="toogleMenu(true)" ui-sref-active="active">
+                    <a ui-sref="homePage.policy">最新动态</a>
+                    <div class="nav-line"></div>
+                </li> -->
+                <li ng-click="toogleMenu(true)" ui-sref="homePage.flow" ui-sref-active="active">
+                    <a>产品介绍</a>
+                    <div class="nav-line"></div>
+                </li>
+
+                <li ng-click="toogleMenu(true)" ui-sref="homePage.about" ui-sref-active="active">
+                    <a>关于我们</a>
+                    <div class="nav-line"></div>
+                </li>
+                <li ng-click="toogleMenu(true)" ui-sref="homePage.contact" ui-sref-active="active">
+                    <a>联系我们</a>
+                    <div class="nav-line"></div>
+                </li>
+
+                <!-- <li ng-click="toogleMenu(true)" ui-sref="homePage.docsDesc" ui-sref-active="active">
+                    <a>api详情</a>
+                    <div class="nav-line"></div>
+                </li> -->
+            </ul>
+        </div>
+        <!-- <div class="right-box">
+            <button type="button" class="btn btn-default btn-login" ui-sref="homePage.login">登录</button>
+            <button type="button" class="btn btn-default btn-register" ui-sref="homePage.register">免费注册</button>
+        </div> -->
+    </div>
+</div>
