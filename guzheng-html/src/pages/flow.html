@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,target-densitydpi=device-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">    -->
+    <title>主页</title>
+    <link rel="stylesheet" href="../css/robotUI.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container clearfix">
+            <div id="logo">
+                <a href="index.html">
+                    <img title="慕课网" src="http://www.imooc.com/static/img/index/logo_new.png">
+                </a>
+            </div>
+            <div class="menuToogle">
+                <div class="mobile-inner-header-icon mobile-inner-header-icon-out" onclick="toogleMenu()">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="nav-box">
+                <ul class="nav" id="nav">
+                    <li onclick="toogleMenu(true,'index')">
+                        <a>首页</a>
+                        <div class="nav-line"></div>
+                    </li>
+                    <li onclick="toogleMenu(true,'docs')" >
+                        <a>产品展示</a>
+                        <div class="nav-line"></div>
+                    </li>
+                    <li onclick="toogleMenu(true,'flow')"  class="active">
+                        <a>产品介绍</a>
+                        <div class="nav-line"></div>
+                    </li>
+
+                    <li onclick="toogleMenu(true,'about')">
+                        <a>关于我们</a>
+                        <div class="nav-line"></div>
+                    </li>
+                    <li onclick="toogleMenu(true,'contact')">
+                        <a>联系我们</a>
+                        <div class="nav-line"></div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- header -->
+
+    <!-- body -->
+    <section class="mt50 container about mt100 xsmt70">
+        <div class="login-panel">
+            <div class="login-part">
+                <div class="section-title mb25">
+                    <span class="icon sanjiaoxing mr15"></span>
+                    产品介绍
+                    <span class="icon fansanjiao ml15"></span>
+                </div>
+                <div class="xieyi-sub-title">时间: 2017-09-30 点击率: 21</div>
+                <div class="layout">
+                    <p>9月28日，全国打击侵犯知识产权和制售假冒伪劣商品工作领导小组办公室发布《中国知识产权保护与营商环境新进展报告》，这是近年来中国官方首次全面系统总结知识产权保护成效。</p>
+                    <p>这份官方发布的报告显示，中国对知识产权的保护正在加强。专利权方面，2013年至2016年全国办理专利行政执法案件累计超过12万件，其中专利侵权案件近5万件。同期，中国公安机关共破获侵犯知识产权刑事案件近4万件，抓获犯罪嫌疑人近5万人，涉案金额达670多亿元人民币。</p>
+                    <div class="images">
+                        <img src="../images/new-bg.png" alt="">
+                        <div class="title">海汇翼信息科技有限公司</div>
+                    </div>
+                    <p>这份官方发布的报告显示，中国对知识产权的保护正在加强。专利权方面，2013年至2016年全国办理专利行政执法案件累计超过12万件，其中专利侵权案件近5万件。同期，中国公安机关共破获侵犯知识产权刑事案件近4万件，抓获犯罪嫌疑人近5万人，涉案金额达670多亿元人民币。</p>
+                    <p>这份官方发布的报告显示，中国对知识产权的保护正在加强。专利权方面，2013年至2016年全国办理专利行政执法案件累计超过12万件，其中专利侵权案件近5万件。同期，中国公安机关共破获侵犯知识产权刑事案件近4万件，抓获犯罪嫌疑人近5万人，涉案金额达670多亿元人民币。</p>
+                    <div class="images">
+                        <img src="../images/new-bg.png" alt="">
+                        <div class="title">海汇翼信息科技有限公司</div>
+                    </div>
+                    <p>这份官方发布的报告显示，中国对知识产权的保护正在加强。专利权方面，2013年至2016年全国办理专利行政执法案件累计超过12万件，其中专利侵权案件近5万件。同期，中国公安机关共破获侵犯知识产权刑事案件近4万件，抓获犯罪嫌疑人近5万人，涉案金额达670多亿元人民币。</p>
+                    <div class="orgin">作者：李亚威</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- body -->
+    <div ui-view="view_centers" class="header-top"></div>
+    <div ui-view="view_menu"></div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container container-bottom">
+            <footer id="footer">
+                <ul>
+                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h2 class="title">相关链接
+                        </h2>
+                        <div class="link">
+                            <a target="_blank " href="http://www.sinofaith-ip.com">上海新诤信知识产权服务股份有限公司</a>
+                        </div>
+                        <div class="link">
+                            <a target="_blank " href="http://www.adr-eipc.com/">北京赛智知识产权调解中心</a>
+                        </div>
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h2 class="title">服务模块
+                        </h2>
+                        <div class="link">
+                            <a target="_blank " href="http://www.sinofaith-ip.com">申请IPR调解</a>
+                        </div>
+                        <div class="link">
+                            <a target="_blank " href="http://www.sinofaith-ip.com">调解员数据库查询</a>
+                        </div>
+                        <div class="link">
+                            <a target="_blank " href="http://www.sinofaith-ip.com">调解案卷数据库查询</a>
+                        </div>
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h2 class="title">联系我们
+                        </h2>
+                        <div class="link">
+                            <a target="_blank " href="http://www.sinofaith-ip.com">联系电话：
+                                <span class="sub-title">86-21-61682616</span>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a target="_blank " href="http://www.sinofaith-ip.com">电子邮箱：
+                                <span class="sub-title">public@sinofaith-ip.com</span>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a target="_blank " href="http://www.sinofaith-ip.com">办公地址：
+                                <span class="sub-title">上海市浦东大道555号裕景国际商务广场B座28楼(200120)</span>
+                            </a>
+                        </div>
+
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h2 class="title">关注我们
+                        </h2>
+                        <div class="link">
+                            <a target="_blank " class="text-center codeImg" href="http://www.sinofaith-ip.com">
+                                <img src="../images/code.png" alt="">
+                                <div>关注我们</div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <div class="footer__bottom__bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12 footer-copyright">© 2017 - 版权所有 上海新诤信知识产权服务股份有限公司 保留一切权利</div>
+                    <div class="col-sm-6 col-xs-12 footer-copyright-last">京ICP证 1223456号 京ICP备 1223456号</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+
+</html>
